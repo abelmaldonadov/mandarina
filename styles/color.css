@@ -1,50 +1,21 @@
 /* TEXT */
 /* GRAY SCALE */
-.text-white, .dark>*,.black>*,.red>*,.blue>*,.purple>*,.brown>*{
-    color: var(--white);
-}
-.text-light{
-    color: var(--light);
-}
-.text-gray{
-    color: var(--gray);
-}
-.text-dark{
-    color: var(--dark);
-}
-.text-black{
-    color: var(--black);
-}
+.text-white, .dark>*,.black>*,.red>*,.blue>*,.purple>*,.brown>*{ color: var(--white); }
+.text-light{ color: var(--light); }
+.text-gray{ color: var(--gray); }
+.text-dark{ color: var(--dark); }
+.text-black{ color: var(--black); }
 /* PRIMARY */
-.text-green{
-    color: var(--green);
-}
-.text-red{
-    color: var(--red);
-}
-.text-yellow{
-    color: var(--yellow);
-}
-.text-blue{
-    color: var(--blue);
-}
+.text-green{ color: var(--green); }
+.text-red{ color: var(--red); }
+.text-yellow{ color: var(--yellow); }
+.text-blue{ color: var(--blue); }
 /* SECONDARY */
-.text-orange{
-    color: var(--orange);
-}
-.text-purple{
-    color: var(--purple);
-}
-.text-sky{
-    color: var(--sky);
-}
-.text-pink{
-    color: var(--pink);
-}
-.text-brown{
-    color: var(--brown);
-}
-
+.text-orange{ color: var(--orange); }
+.text-purple{ color: var(--purple); }
+.text-sky{ color: var(--sky); }
+.text-pink{ color: var(--pink); }
+.text-brown{ color: var(--brown); }
 
 /* DIV */
 /* GRAY SCALE */
