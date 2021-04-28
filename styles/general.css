@@ -22,18 +22,19 @@
     /* SPACE */
     --pad: 10px;
     --mar: 10px;
-    /* RESPONSIVE */
-    --xl: 1200px;
-    --l: 1000px;
-    --m: 800px;
-    --s: 650px;
-    --xs: 550px;
+    /* RESPONSIVE - NO FUNCTIONAL */
+    --xl: 1300px;
+    --lg: 1100px;
+    --md: 900px;
+    --sm: 600px;
+    --xs: 0px;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     cursor: default;
+    user-select: none;
 }
 html,body{
     font-size: 16px;

@@ -1,6 +1,6 @@
 /* TEXT */
 /* GRAY SCALE */
-.text-white, .dark>*,.black>*,.red>*,.blue>*,.purple>*,.brown>*{ color: var(--white); }
+.text-white,.dark>*,.black>*,.red>*,.blue>*,.purple>*,.brown>*{ color: var(--white); }
 .text-light{ color: var(--light); }
 .text-gray{ color: var(--gray); }
 .text-dark{ color: var(--dark); }
@@ -69,4 +69,3 @@
     background-color: var(--brown);
     color: var(--white);
 }
-
