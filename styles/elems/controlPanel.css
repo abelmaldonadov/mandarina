@@ -1,31 +1,32 @@
 .controlPanel{
     width: 100%;
-    position: relative;
+    box-shadow: 0 0 5px var(--gray);
 }
 .controlPanel>.header{
     padding: calc(var(--p)*1.5);
-    margin-bottom: var(--m);
+    border-bottom: 3px solid var(--light);
+    position: relative;
 }
 .controlPanel>.header *{
     color: var(--dark);
 }
 .controlPanel .help{
-    font-size: 1.5rem;
     cursor: pointer;
     position: absolute;
     right: var(--p);
-    top: var(--p);
+    top: calc(50% - 10px);
     text-align: center;
-    width: 30px;
-    height: 30px;
-    /* border-radius: 50%; */
+    width: 20px;
+    height: 20px;
+}
+.controlPanel .help:hover{
+    filter: brightness(90%);
 }
 .controlPanel>.body{
     padding: calc(var(--p)*1.5);
 }
 .controlPanel>.footer{
     padding: calc(var(--p)*1.5);
-    margin-top: var(--m);
     display: flex;
     justify-content: flex-end;
 }
