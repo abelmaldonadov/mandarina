@@ -11,7 +11,7 @@
 }
 .col{
     display: block;
-    padding: var(--pad);
+    padding: var(--p);
     min-height: 100%;
 }
 /* DEFAULT */

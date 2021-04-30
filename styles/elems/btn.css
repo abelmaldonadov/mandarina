@@ -1,17 +1,20 @@
-.btn{
+.btn,.btn-md{
     font-size: .9rem;
-    padding: var(--pad);
+    padding: calc(var(--p)*1.5);
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    margin-top: var(--mar);
-    margin-bottom: var(--mar);
+    margin-top: calc(var(--m)*.25);
+    margin-bottom: calc(var(--m)*.25);
     min-width: 70px;
     text-align: center;
-
-    -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.05);
-    -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.05);
-    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.05);
+}
+.btn-sm{
+    padding: calc(var(--p)*.75);
+    font-size: .75rem;
+}
+.btn-lg{
+    padding: calc(var(--p)*2.25);
+    font-size: 1.25rem
 }
 .btn:active{
     opacity: .9;

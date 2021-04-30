@@ -1,7 +1,10 @@
+h1,h2,h3,h4,h5,h6,p,small,blockquote,cite{
+    user-select: text;
+}
 h1,h2,h3,h4,h5,h6{
     color: var(--black);
 }
-p,b,i,small,blockquote,cite{
+p,small,blockquote,cite{
     color: var(--dark);
     font-size: 1rem;
 }
@@ -11,6 +14,14 @@ h3{ font-size: 2.5rem; }
 h4{ font-size: 2rem; }
 h5{ font-size: 1.5rem; }
 h6{ font-size: 1.25rem; }
+a{
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+}
+a:hover{
+    color: var(--black);
+}
 
 /* ALIGMENTS */
 .text-left{ text-align: left; }
@@ -18,7 +29,9 @@ h6{ font-size: 1.25rem; }
 .text-center{ text-align: center; }
 
 /* OTHERS */
-.resalt{ background-color: var(--yellow); }
+.b{ font-weight: bolder; }
+.i{ font-style: italic; }
+.important{ background-color: var(--yellow); }
 .underline{ text-decoration: underline; }
 .overline{ text-decoration: overline; }
-.line-through{ text-decoration: line-through; }
+.line{ text-decoration: line-through; }

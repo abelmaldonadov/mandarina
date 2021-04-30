@@ -7,21 +7,31 @@
     --dark: rgb(52, 57, 62);
     --black: rgb(0, 0, 0);
     /* PRIMARY */
-    --green: rgb(176, 245, 87);
-    --red: rgb(226, 35, 35);
-    --yellow: rgb(255, 251, 0);
-    --blue: rgb(52, 73, 255);
+    --green: rgb(121, 189, 69);
+    --red: rgb(176, 0, 21);
+    --yellow: rgb(255, 210, 0);
+    --blue: rgb(31, 32, 68);
     /* SECONDARY */
-    --orange: rgb(255, 189, 67);
-    --purple: rgb(167, 43, 224);
-    --sky: rgb(173, 239, 255);
-    --pink: rgb(252, 170, 231);
+    --orange: rgb(255, 145, 68);
+    --purple: rgb(67, 0, 116);
+    --sky: rgb(152, 219, 236);
+    --pink: rgb(244, 18, 143);
     --brown: rgb(136, 64, 17);
+    /* PASTEL */
+    --l-green: rgb(220, 250, 198);
+    --l-red: rgb(255, 203, 209);
+    --l-yellow: rgb(247, 238, 199);
+    --l-blue: rgb(151, 154, 209);
+    --l-orange: rgb(243, 192, 156);
+    --l-purple: rgb(190, 150, 219);
+    --l-sky: rgb(217, 228, 251);
+    --l-pink: rgb(241, 165, 206);
+    --l-brown: rgb(214, 197, 186);
     /* BORDER - LINE */
     --line: 1px;
     /* SPACE */
-    --pad: 10px;
-    --mar: 10px;
+    --p: 10px;
+    --m: 10px;
     /* RESPONSIVE - NO FUNCTIONAL */
     --xl: 1300px;
     --lg: 1100px;
@@ -37,7 +47,7 @@
     user-select: none;
 }
 html,body{
-    font-size: 16px;
+    font-size: 15px;
     max-width: 100vw;
     max-height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

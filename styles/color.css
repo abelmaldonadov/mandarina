@@ -1,6 +1,6 @@
 /* TEXT */
 /* GRAY SCALE */
-.text-white,.dark>*,.black>*,.red>*,.blue>*,.purple>*,.brown>*{ color: var(--white); }
+.text-white,.dark>*,.black>*,.red>*,.blue>*,.purple>*,.pink>*,.brown>*{ color: var(--white); }
 .text-light{ color: var(--light); }
 .text-gray{ color: var(--gray); }
 .text-dark{ color: var(--dark); }
@@ -64,8 +64,37 @@
 }
 .pink{
     background-color: var(--pink);
+    color: var(--white);
 }
 .brown{
     background-color: var(--brown);
     color: var(--white);
+}
+/* PASTEL */
+.l-green{
+    background-color: var(--l-green);
+}
+.l-red{
+    background-color: var(--l-red);
+}
+.l-yellow{
+    background-color: var(--l-yellow);
+}
+.l-blue{
+    background-color: var(--l-blue);
+}
+.l-orange{
+    background-color: var(--l-orange);
+}
+.l-purple{
+    background-color: var(--l-purple);
+}
+.l-sky{
+    background-color: var(--l-sky);
+}
+.l-pink{
+    background-color: var(--l-pink);
+}
+.l-brown{
+    background-color: var(--l-brown);
 }

@@ -11,21 +11,89 @@
     <link rel="stylesheet" href="styles/space.css">
     <link rel="stylesheet" href="styles/color.css">
     <link rel="stylesheet" href="styles/text.css">
+
     <link rel="stylesheet" href="styles/elems/alert.css">
     <link rel="stylesheet" href="styles/elems/btn.css">
+    <link rel="stylesheet" href="styles/elems/navigationDrawer.css">
+    <link rel="stylesheet" href="styles/elems/navbar.css">
+    <link rel="stylesheet" href="styles/elems/table.css">
 </head>
 <body>
     
-    <div id="app" class="container">
+    <div id="app" class="container mt-6 p-2">
 
-        <h3 class="text-brown">Hola mundo</h3>
-        <p>Hola mundo</p>
+        <!-- NAVBAR -->
+        <nav class="navbar light">
+            <div class="item"><button class="btn white">FORMALIZACIÓN</button></div>
+            <div class="item"><button class="btn white">CERTIFICADOS</button></div>
+            <div class="item"><button class="btn white">CAM</button></div>
+            <div class="item"><button class="btn white">CENCERRO</button></div>
+        </nav>
+
+        <!-- NAVIGATION DRAWER -->
+        <input type="checkbox" id="checkNavigationDrawer" hidden>
+        <div class="btnNavigationDrawer gray">
+            <label for="checkNavigationDrawer">&#9654;</label>
+        </div>
+        <div class="navigationDrawer light">
+            <div class="brand white"><a href="#">BRAND</a></div>
+            <div class="item"><a href="dashboard.html">Dashboard</a></div>
+            <div class="item"><a href="#">Configuración</a></div>
+            <div class="item"><a href="#">Usuarios</a></div>
+            <div class="item"><a href="#">Avanzados</a></div>
+            <div class="item"><a href="#">Otros</a></div>
+            <div class="footer">
+                <div class="item"><a href="index.html">terminos y condiciones</a></div>
+                <div class="item"><a href="index.html">algún enlace raro</a></div>
+                <div class="item"><a href="index.html" class="text-red">Salir</a></div>
+            </div>
+        </div>
+
+        <!-- TITLES -->
+        <h2 class="">SAC CDLIMA</h2>
 
         <!-- ALERT -->
+        <div class="alert l-green">
+            <span class="close">&times;</span>
+            <p>Lorem ipsum dolor sit amet <span class="green">consectetur adipisicing elit. Tempora</span> esse atque eos <span class="line">laboriosam</span> , ab blanditiis <span class="b">cum repellendus totam</span>, quidem dolor officiis iusto? <span class="i">Ipsam ipsa consequuntur</span> numquam illo nulla ipsum quod.</p>
+        </div>
+        <div class="alert l-red">
+            <span class="close">&times;</span>
+            <p>Lorem ipsum dolor sit amet <span class="red">consectetur adipisicing elit. Tempora</span> esse atque eos <span class="line">laboriosam</span> , ab blanditiis <span class="b">cum repellendus totam</span>, quidem dolor officiis iusto? <span class="i">Ipsam ipsa consequuntur</span> numquam illo nulla ipsum quod.</p>
+        </div>
         <div class="alert light">
             <span class="close">&times;</span>
-            <p>Lorem ipsum dolor sit amet <span class="resalt">consectetur adipisicing elit. Tempora</span> esse atque eos <span class="line-through">laboriosam</span> , ab blanditiis <b>cum repellendus totam</b>, quidem dolor officiis iusto? <i>Ipsam ipsa consequuntur</i> numquam illo nulla ipsum quod.</p>
+            <p>Lorem ipsum dolor sit amet <span class="important">consectetur adipisicing elit. Tempora</span> esse atque eos <span class="line">laboriosam</span> , ab blanditiis <span class="b">cum repellendus totam</span>, quidem dolor officiis iusto? <span class="i">Ipsam ipsa consequuntur</span> numquam illo nulla ipsum quod.</p>
         </div>
+        <div class="alert l-blue">
+            <span class="close">&times;</span>
+            <p>Lorem ipsum dolor sit amet <span class="blue">consectetur adipisicing elit. Tempora</span> esse atque eos <span class="line">laboriosam</span> , ab blanditiis <span class="b">cum repellendus totam</span>, quidem dolor officiis iusto? <span class="i">Ipsam ipsa consequuntur</span> numquam illo nulla ipsum quod.</p>
+        </div>
+        <div class="alert l-orange">
+            <span class="close">&times;</span>
+            <p>Lorem ipsum dolor sit amet <span class="orange">consectetur adipisicing elit. Tempora</span> esse atque eos <span class="line">laboriosam</span> , ab blanditiis <span class="b">cum repellendus totam</span>, quidem dolor officiis iusto? <span class="i">Ipsam ipsa consequuntur</span> numquam illo nulla ipsum quod.</p>
+        </div>
+        <div class="alert l-yellow">
+            <span class="close">&times;</span>
+            <p>Lorem ipsum dolor sit amet <span class="yellow">consectetur adipisicing elit. Tempora</span> esse atque eos <span class="line">laboriosam</span> , ab blanditiis <span class="b">cum repellendus totam</span>, quidem dolor officiis iusto? <span class="i">Ipsam ipsa consequuntur</span> numquam illo nulla ipsum quod.</p>
+        </div>
+        <div class="alert l-purple">
+            <span class="close">&times;</span>
+            <p>Lorem ipsum dolor sit amet <span class="purple">consectetur adipisicing elit. Tempora</span> esse atque eos <span class="line">laboriosam</span> , ab blanditiis <span class="b">cum repellendus totam</span>, quidem dolor officiis iusto? <span class="i">Ipsam ipsa consequuntur</span> numquam illo nulla ipsum quod.</p>
+        </div>
+        <div class="alert l-sky">
+            <span class="close">&times;</span>
+            <p>Lorem ipsum dolor sit amet <span class="sky">consectetur adipisicing elit. Tempora</span> esse atque eos <span class="line">laboriosam</span> , ab blanditiis <span class="b">cum repellendus totam</span>, quidem dolor officiis iusto? <span class="i">Ipsam ipsa consequuntur</span> numquam illo nulla ipsum quod.</p>
+        </div>
+        <div class="alert l-pink">
+            <span class="close">&times;</span>
+            <p>Lorem ipsum dolor sit amet <span class="pink">consectetur adipisicing elit. Tempora</span> esse atque eos <span class="line">laboriosam</span> , ab blanditiis <span class="b">cum repellendus totam</span>, quidem dolor officiis iusto? <span class="i">Ipsam ipsa consequuntur</span> numquam illo nulla ipsum quod.</p>
+        </div>
+        <div class="alert l-brown">
+            <span class="close">&times;</span>
+            <p>Lorem <span class="underline">ipsum</span> dolor sit amet <span class="brown">consectetur adipisicing elit. Tempora</span> esse atque eos <span class="line">laboriosam</span> , ab blanditiis <span class="b">cum repellendus totam</span>, quidem dolor officiis iusto? <span class="i">Ipsam ipsa consequuntur</span> numquam illo nulla ipsum quod.</p>
+        </div>
+        
 
         <div class="row">
             <div class="col-12">
@@ -51,47 +119,23 @@
             <div class="col xs-3">hola</div>
             <div class="col xs-3">hola</div>
         </div>
-        <div class="row gray">
-            <div class="col xs-2">hola</div>
-            <div class="col xs-2">hola</div>
-            <div class="col xs-2">hola</div>
-            <div class="col xs-2">hola</div>
-            <div class="col xs-2">hola</div>
-            <div class="col xs-2">hola</div>
-        </div>
-        <div class="row light">
-            <div class="col xs-1">hola</div>
-            <div class="col xs-1">hola</div>
-            <div class="col xs-1">hola</div>
-            <div class="col xs-1">hola</div>
-            <div class="col xs-1">hola</div>
-            <div class="col xs-1">hola</div>
-            <div class="col xs-1">hola</div>
-            <div class="col xs-1">hola</div>
-            <div class="col xs-1">hola</div>
-            <div class="col xs-1">hola</div>
-            <div class="col xs-1">hola</div>
-            <div class="col xs-1 sky">hola</div>
-        </div>
-
-        <div class="row gray">
-            <div class="col xs-2 purple">hola</div>
-            <div class="col xs-4 orange">hola</div>
-            <div class="col xs-6 dark">chao</div>
-            <div class="col xs-6 blue"><p>hola asdasdsadsad</p></div>
+        <div class="row">
+            <div class="col xs-8"></div>
+            <div class="col xs-4 orange">orange</div>
         </div>
 
 
         <button class="btn black btn-block">Aceptar</button>
+        <button class="btn black">Aceptar</button>
         <button class="btn dark">Aceptar</button>
         <button class="btn gray">Aceptar</button>
         <button class="btn light">Aceptar</button>
         <button class="btn white">Aceptar</button>
 
         <button class="btn green">Aceptar</button>
-        <button class="btn red">Aceptar</button>
+        <button class="btn btn-sm red">Aceptar</button>
         <button class="btn yellow">Aceptar</button>
-        <button class="btn blue">Aceptar</button>
+        <button class="btn btn-lg blue">Aceptar</button>
 
         <button class="btn orange">Aceptar</button>
         <button class="btn purple">Aceptar</button>
@@ -115,18 +159,6 @@
             </div>
             <div class="col xs-6 sky">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, consequuntur laboriosam at magnam quis, reprehenderit debitis saepe quae maxime, quibusdam qui ab perferendis? Omnis odio commodi odit molestiae nesciunt reprehenderit.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col xs-6 orange">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatem atque amet ducimus impedit quam ex optio, ipsum veritatis, at officiis deserunt eius, aspernatur facere magnam necessitatibus illo odio eligendi?</p>
-            </div>
-            <div class="col xs-2 pink">
-                <p>Lorem ipsum Atque laboriosam delectus exercitationem rem quos sapiente, nemo itaque molestiae omnis unde ea. Consectetur vitae earum animi eaque!</p>
-            </div>
-            <div class="col xs-2 dark">
-                <p>Lorem ipsum, dolor sit Provident quibusdam quis quam nemo id magnam voluptate cumque, perferendis neque iure sapiente voluptatem ducimus sequi, placeat accusantium fuga adipisci sunt nesciunt!</p>
             </div>
         </div>
     </div>

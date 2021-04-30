@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/space.css">
+    <link rel="stylesheet" href="styles/color.css">
+    <link rel="stylesheet" href="styles/text.css">
+
+    <link rel="stylesheet" href="styles/elems/alert.css">
+    <link rel="stylesheet" href="styles/elems/btn.css">
+    <link rel="stylesheet" href="styles/elems/navigationDrawer.css">
+    <link rel="stylesheet" href="styles/elems/navbar.css">
+    <link rel="stylesheet" href="styles/elems/table.css">
+</head>
+<body>
+    
+    <div id="app" class="container mt-6 p-2">
+
+        <!-- NAVBAR -->
+        <nav class="navbar dark">
+            <div class="item"><button class="btn light">FORMALIZACIÓN</button></div>
+            <div class="item"><button class="btn light">CERTIFICADOS</button></div>
+            <div class="item"><button class="btn light">CAM</button></div>
+            <div class="item"><button class="btn light">CENCERRO</button></div>
+        </nav>
+
+        <!-- NAVIGATION DRAWER -->
+        <input type="checkbox" id="checkNavigationDrawer" hidden>
+        <div class="btnNavigationDrawer dark">
+            <label for="checkNavigationDrawer">&#9654;</label>
+        </div>
+        <div class="navigationDrawer light">
+            <div class="brand white"><a href="#">BRAND</a></div>
+            <div class="item"><a href="dashboard.html">Dashboard</a></div>
+            <div class="item"><a href="#">Configuración</a></div>
+            <div class="item"><a href="#">Usuarios</a></div>
+            <div class="item"><a href="#">Avanzados</a></div>
+            <div class="item"><a href="#">Otros</a></div>
+            <div class="footer">
+                <div class="item"><a href="index.html">terminos y condiciones</a></div>
+                <div class="item"><a href="index.html">algún enlace raro</a></div>
+                <div class="item"><a href="index.html" class="text-red">Salir</a></div>
+            </div>
+        </div>
+
+        <!-- TITLES -->
+        <h2 class="mb-3">SAC CDLIMA</h2>
+
+        <!-- GRID -->
+        <div class="row p-1 light">
+            <div class="col lg-6 white">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut aperiam eveniet neque quae, sed pariatur esse. Reprehenderit ut animi ipsa similique numquam saepe omnis veniam quia fugiat. Modi, dolorem voluptates.
+                <div class="flex-right">
+                    <button class="btn red">Cancelar</button>
+                    <button class="btn green">Aceptar</button>
+                </div>
+            </div>
+            <div class="col lg-6 white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ex voluptate. Voluptate aperiam tempore porro sed incidunt aut laborum quibusdam nemo numquam ut, mollitia placeat totam. Architecto eligendi
+                <div class="flex-right">
+                    <button class="btn red">Cancelar</button>
+                    <button class="btn green">Aceptar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-1"></div>
+
+        <div class="row p-1 light">
+            <div class="col col-12 white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sapiente provident quis. Omnis officiis modi sint pariatur ipsam qui. Dolor fugit itaque quo amet nam error repudiandae laudantium ipsa rem.
+                <div class="flex-right">
+                    <button class="btn red">Cancelar</button>
+                    <button class="btn green">Aceptar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-1"></div>
+
+        <div class="alert l-yellow">
+            <span class="close">&times;</span>
+            <p>Lorem ipsum dolor sit amet <span class="yellow">consectetur adipisicing elit. Tempora</span> esse atque eos <span class="line">laboriosam</span> , ab blanditiis <span class="b">cum repellendus totam</span>, quidem dolor officiis iusto? <span class="i">Ipsam ipsa consequuntur</span> numquam illo nulla ipsum quod.</p>
+        </div>
+        
+    </div>
+
+</body>
+</html>

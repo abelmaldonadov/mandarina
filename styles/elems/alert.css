@@ -1,60 +1,12 @@
 .alert{
-    opacity: .7;
-    padding: calc(var(--pad)*2);
+    padding: calc(var(--p)*2);
     position: relative;
 }
 .close{
     font-size: 1.5rem;
     cursor: pointer;
     position: absolute;
-    right: 10px;
-    top: 0px;
-}
-
-/* COLORS */
-/* GRAY SCALE */
-.alert.white{
-    background-color: var(--white);
-}
-.alert.light{
-    background-color: var(--light);
-}
-.alert.gray{
-    background-color: var(--gray);
-}
-.alert.dark{
-    background-color: var(--dark);
-}
-.alert.black{
-    background-color: var(--black);
-}
-/* PRIMARY */
-.alert.green{
-    background-color: var(--green);
-}
-.alert.red{
-    background-color: var(--red);
-}
-.alert.yellow{
-    background-color: var(--yellow);
-}
-.alert.blue{
-    background-color: var(--blue);
-}
-/* SECONDARY */
-.alert.orange{
-    background-color: var(--orange);
-}
-.alert.purple{
-    background-color: var(--purple);
-}
-.alert.sky{
-    background-color: var(--sky);
-}
-.alert.pink{
-    background-color: var(--pink);
-}
-.alert.brown{
-    background-color: var(--brown);
+    right: var(--p);
+    top: calc(var(--p) -1px);
 }
 
