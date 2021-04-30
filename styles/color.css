@@ -39,6 +39,7 @@
 /* PRIMARY */
 .green{
     background-color: var(--green);
+    color: var(--white);
 }
 .red{
     background-color: var(--red);

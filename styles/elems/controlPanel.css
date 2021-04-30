@@ -1,0 +1,34 @@
+.controlPanel{
+    width: 100%;
+    position: relative;
+}
+.controlPanel>.header{
+    padding: calc(var(--p)*1.5);
+    margin-bottom: var(--m);
+}
+.controlPanel>.header *{
+    color: var(--dark);
+}
+.controlPanel .help{
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: var(--p);
+    top: var(--p);
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    /* border-radius: 50%; */
+}
+.controlPanel>.body{
+    padding: calc(var(--p)*1.5);
+}
+.controlPanel>.footer{
+    padding: calc(var(--p)*1.5);
+    margin-top: var(--m);
+    display: flex;
+    justify-content: flex-end;
+}
+.controlPanel>.footer .btn{
+    margin-left: var(--m);
+}
