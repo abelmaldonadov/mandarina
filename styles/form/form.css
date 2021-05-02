@@ -1,5 +1,7 @@
 .form .item{
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: var(--m);
 }
 .form .item input{
@@ -9,7 +11,6 @@
     padding: var(--p);
     cursor: pointer;
     border: 1px solid var(--gray);
-    order: 2;
 }
 .form .item input:focus{
     outline: none;
@@ -19,5 +20,4 @@
 .form .item label{
     display: block;
     width: 100%;
-    order: 1;
 }
