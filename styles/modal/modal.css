@@ -4,20 +4,30 @@
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: rgba(248, 248, 248, 0.5);
     z-index: 999;
 }
-.modal .content{
-    width: 100px;
-    height: 100px;
-}
-.modal .close{
-
-}
-.modal-open:active ~ .modal{
+.modal.active{
     display: flex;
 }
+.modal .content{
+    transition: all 1s;
+    transform: translateY(-1000%);
+}
+.modal .content.active{
+    transition: all 1s;
+    transform: translateY(0%);
+}
 
+.modal .content .header{
+    padding: var(--p);
+}
+.modal .content .body{
+    padding: var(--p);
+}
+.modal .content .footer{
+    padding: var(--p);
+}
