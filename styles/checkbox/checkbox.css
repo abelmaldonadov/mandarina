@@ -1,0 +1,96 @@
+.form input[type="checkbox"], .form input[type="radio"]{
+    display: none;
+}
+
+.form .radio label, .form .checkbox label{
+    color: var(--dark);
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.form .radio label:hover, .form .checkbox label:hover{
+    background-color: var(--light);
+}
+.form .radio label::before{
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    background-color: none;
+    border: 2px solid var(--dark);
+    border-radius: 50%;
+    position: absolute;
+    left: 21px;
+    top: 8px;
+
+}
+.form .checkbox label::before{
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    background-color: none;
+    border: 2px solid var(--dark);
+    border-radius: 3px;
+    position: absolute;
+    left: 21px;
+    top: 8px;
+}
+.form input[type="radio"]:checked + label, .form input[type="checkbox"]:checked + label{
+    background-color: var(--light);
+    border-radius: 2px;
+}
+.form input[type="radio"]:checked + label::after{
+    content: "";
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    background-color: var(--dark);
+    border-radius: 50%;
+    position: absolute;
+    top: 11px;
+    left: 24px;
+}
+.form input[type="checkbox"]:checked + label::after{
+    content: "";
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    background-color: var(--dark);
+    position: absolute;
+    top: 11px;
+    left: 24px;
+}
+
+/* rojo */
+
+.form .radio-red label::before, .form .checkbox-red label::before{border: 2px solid var(--red);}
+.form .radio-red input[type="radio"]:checked + label::after, .form .checkbox-red input[type="checkbox"]:checked + label::after{background-color: var(--red);}
+.form .radio-red input[type="radio"]:checked + label, .form .checkbox-red input[type="checkbox"]:checked + label{background-color: var(--l-red);}
+
+/* azul */
+
+.form .radio-blue label::before, form .checkbox-blue label::before{border: 2px solid var(--blue);}
+.form .radio-blue input[type="radio"]:checked + label::after, form .checkbox-blue input[type="checkbox"]:checked + label::after{background-color: var(--blue);}
+.form .radio-blue input[type="radio"]:checked + label, .form .checkbox-blue input[type="checkbox"]:checked + label{background-color: var(--l-blue);}
+
+/* verde */
+
+.form .radio-green label::before, .form .checkbox-green label::before{border: 2px solid var(--green);}
+.form .radio-green input[type="radio"]:checked + label::after, .form .checkbox-green input[type="checkbox"]:checked + label::after{background-color: var(--green);}
+.form .radio-green input[type="radio"]:checked + label, .form .checkbox-green input[type="checkbox"]:checked + label{background-color: var(--l-green);}
+
+/* yellow */
+
+.form .radio-yellow label::before, .form .checkbox-yellow label::before{border: 2px solid var(--yellow);}
+.form .radio-yellow input[type="radio"]:checked + label::after, .form .checkbox-yellow input[type="checkbox"]:checked + label::after{background-color: var(--yellow);}
+.form .radio-yellow input[type="radio"]:checked + label, .form .checkbox-yellow input[type="checkbox"]:checked + label{background-color: var(--l-yellow);}
+
+/* naranja */
+
+.form .radio-orange label::before, .form .checkbox-orange label::before{border: 2px solid var(--orange);}
+.form .radio-orange input[type="radio"]:checked + label::after, .form .checkbox-orange input[type="checkbox"]:checked + label::after{background-color: var(--orange);}
+.form .radio-orange input[type="radio"]:checked + label, .form .checkbox-orange input[type="checkbox"]:checked + label{background-color: var(--l-orange);}
