@@ -4,20 +4,79 @@
     flex-wrap: wrap;
     margin-bottom: var(--m);
 }
-.form .item input{
+label{
+    display: block;
+    width: 100%;
+}
+/* INPUT TEXT, MAIL, PASS */
+input[type="text"], input[type="mail"], input[type="pass"]{
     display: block;
     width: 100%;
     height: calc(var(--p)*3);
     padding: var(--p);
     cursor: pointer;
-    border: 1px solid var(--gray);
+    border: var(--line) solid var(--gray);
 }
-.form .item input:focus{
+input[type="text"]:focus, input[type="mail"]:focus, input[type="pass"]:focus, select:focus{
     outline: none;
-    border: 1px solid var(--gray);
+    border: var(--line) solid var(--gray);
     box-shadow: 0 0 5px var(--gray);
 }
-.form .item label{
+/* SELECT */
+select{
     display: block;
     width: 100%;
+    height: calc(var(--p)*3);
+    padding-left: calc(var(--p)/2);
+    padding-right: calc(var(--p)/2);
+    cursor: pointer;
+    border: var(--line) solid var(--gray);
+}
+/* CHECK Y RADIO */
+input[type="checkbox"], input[type="radio"]{
+    display: none !important;
+}
+.radio, .check{
+    color: var(--dark);
+    padding: 5px 15px 5px 33px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.radio:hover, .check:hover{
+    background-color: var(--light);
+}
+.radio::before, .check::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: none;
+    border: var(--line) solid var(--dark);
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+.radio::before{
+    border-radius: 50%;
+}
+.check::before{
+    border-radius: 3px;
+}
+input[type="radio"]:checked + label::after, input[type="checkbox"]:checked + label::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background-color: var(--dark);
+    position: absolute;
+    left: 13px;
+    top: 11px;
+}
+input[type="radio"]:checked + label::after{
+    border-radius: 50%;
+}
+input[type="checkbox"]:checked + label::after{
+    border-radius: 0;
 }
