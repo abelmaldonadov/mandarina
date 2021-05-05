@@ -1,0 +1,18 @@
+.table{
+    display: table;
+    width: 100%;
+}
+.table thead{
+    display: table-header-group;
+    width: 100%;
+    filter: brightness(95%);
+    border-bottom: 10px solid var(--dark);
+}
+.table th, .table td{
+    display: table-cell;
+    padding: calc(var(--p)/2);
+}
+.table tbody{
+    display: table-footer-group;
+    width: 100%;
+}

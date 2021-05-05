@@ -1,0 +1,35 @@
+.controlPanel{
+    width: 100%;
+    box-shadow: 0 0 5px var(--gray);
+}
+.controlPanel>.header{
+    padding: calc(var(--p)*1.5);
+    border-bottom: 3px solid var(--light);
+    position: relative;
+}
+.controlPanel>.header *{
+    color: var(--dark);
+}
+.controlPanel .help{
+    cursor: pointer;
+    position: absolute;
+    right: var(--p);
+    top: calc(50% - 10px);
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+.controlPanel .help:hover{
+    filter: brightness(90%);
+}
+.controlPanel>.body{
+    padding: calc(var(--p)*1.5);
+}
+.controlPanel>.footer{
+    padding: calc(var(--p)*1.5);
+    display: flex;
+    justify-content: flex-end;
+}
+.controlPanel>.footer .btn{
+    margin-left: var(--m);
+}
