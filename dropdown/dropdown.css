@@ -1,0 +1,32 @@
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown * {
+    font-size: .8rem;
+}
+.dropdown .dropdown-open:after{
+    content: " \025bc";
+    opacity: .5;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid var(--light);
+}
+.dropdown .content .item{
+    cursor: pointer;
+    min-width: 90px;
+}
+.dropdown .content .item{
+    display: block;
+    cursor: pointer;
+    padding: var(--p);
+}
+.dropdown .content .item:hover{
+    background-color: var(--light);
+}
+.dropdown:hover .content{
+    display: block;
+}
