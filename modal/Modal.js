@@ -1,7 +1,7 @@
 class Modal
 {
-    constructor(id){
-        this.modal = "#"+id // #MODAL1
+    constructor(modal){
+        this.modal = "#"+modal.id // #MODAL1
         // ABRIR MODAL
         document.querySelectorAll(".modal-open").forEach(btn => {
             if (btn.dataset.target == this.modal) {
@@ -20,6 +20,6 @@ class Modal
         })
     }
 }
-document.querySelectorAll(".modal").forEach(e => {
-    new Modal(e.id)
+document.querySelectorAll(".modal").forEach(modal => {
+    new Modal(modal)
 })
