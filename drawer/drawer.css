@@ -1,0 +1,73 @@
+.drawer-open::before{
+    content: "\025b6";
+    position: fixed;
+    top: 50%;
+    left: 0;
+    display: block;
+    cursor: pointer;
+    color: var(--notify-text);
+    padding-right: calc(var(--p)*1.5);
+    padding-left: calc(var(--p)*1.5);
+    padding-top: calc(var(--p)*3);
+    padding-bottom: calc(var(--p)*3);
+    background-color: var(--notify-bg);
+    z-index: 2;
+}
+.drawer{
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    z-index: 1;
+    padding: calc(var(--p)*2);
+    background-color: var(--light);
+}
+.drawer>.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-bottom: var(--m);
+}
+.drawer>.item{
+    display: block;
+    width: 100%;
+    padding: var(--p);
+}
+.drawer hr{
+    margin-left: var(--m);
+    margin-right: var(--m);
+    margin-top: calc(var(--m)/2);
+    margin-bottom: calc(var(--m)/2);
+}
+.drawer>.footer{
+    width: 100%;
+    background-color: var(--light);
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+}
+.drawer>.footer>.item{
+    display: block;
+    text-align: center;
+    padding: calc(var(--m)/2);
+}
+
+/* ACTIVATE DRAWER */
+.drawer.active{
+    transition: all .5s;
+    transform: translateX(300px);
+}
+.drawer{
+    transition: all .5s;
+    transform: translateX(0px);
+}
+.drawer-open.active::before{
+    transition: all .5s;
+    transform: rotateY(180deg) translateX(-300px);
+}
+.drawer-open::before{
+    transition: all .5s;
+    transform: translateX(0px);
+}

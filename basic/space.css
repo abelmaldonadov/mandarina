@@ -12,7 +12,9 @@
     align-items: center;
 }
 hr{
-    border: 1px solid var(--light);
+    height: 1px;
+    background-color: var(--gray);
+    border: none;
 }
 /* PADDING */
 .p-0{ padding: 0; }
