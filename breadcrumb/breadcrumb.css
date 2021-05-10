@@ -1,0 +1,31 @@
+.breadcrumb{
+    display: flex;
+}
+.breadcrumb .item{
+    display: block;
+    padding: var(--p);
+    margin-right: 25px;
+    border-radius: 3px;
+    background-color: var(--light);
+    position: relative;
+    z-index: 1;
+}
+.breadcrumb .item:hover{
+    filter: brightness(90%);
+}
+.breadcrumb .item::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: var(--light);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.breadcrumb .item.active, .breadcrumb .item.active::before{
+    background-color: var(--notify-bg);
+    color: var(--notify-text);
+}
