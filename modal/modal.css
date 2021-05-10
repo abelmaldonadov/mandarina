@@ -10,14 +10,14 @@
     background-color: rgba(248, 248, 248, 0.5);
     z-index: 999;
 }
-.modal.active{
-    display: flex;
-}
 .modal .content{
     transition: all 1s;
     transform: translateY(-1000%);
 }
-.modal .content.active{
+.modal.active{
+    display: flex;
+}
+.modal.active .content{
     transition: all 1s;
     transform: translateY(0%);
 }
