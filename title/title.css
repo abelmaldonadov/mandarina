@@ -6,9 +6,10 @@
     background-color: var(--dark);
     color: var(--white);
     padding: var(--p);
+    border-radius: 0px 10px 10px 10px;
     position: absolute;
-    bottom: -75%;
-    left: 75%;
+    bottom: -100%;
+    left: 50%;
     z-index: 1000;
     opacity: 0;
     visibility: hidden;

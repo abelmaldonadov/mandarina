@@ -1,5 +1,5 @@
 .btn,.btn-md{
-    font-size: .8rem;
+    font-size: 1rem;
     padding: calc(var(--p)*1.5);
     border: none;
     cursor: pointer;
@@ -10,12 +10,12 @@
 }
 .btn-sm{
     padding: calc(var(--p)*.75);
-    font-size: .7rem;
+    font-size: .9rem;
     min-width: 60px;
 }
 .btn-lg{
     padding: calc(var(--p)*2.25);
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     min-width: 120px;
 }
 .btn:hover{

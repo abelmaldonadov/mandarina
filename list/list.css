@@ -1,64 +1,29 @@
-/* lista ordenada */
-
-ol{
+.list{
+    display: block;
     width: 100%;
-    border: 1px solid var(--gray);
-    border-radius: 5px;
-    counter-reset: conteo;
 }
-ol li::marker{
-    content: none;
-}
-ol li::before{
-    counter-increment: conteo;
-    content: counter(conteo) ".";
+.list .item{
+    padding: calc(var(--p)*2);
     position: relative;
-    left: -20px;
-    font-size: 18px;
-    font-weight: 700;
-}
+    /* border: 1px solid var(--light); */
 
-/* lista desordenada */
-
-ul{
-    width: 100%;
-    border: 1px solid var(--gray);
-    border-radius: 5px;
 }
-ul li::marker{
-    content: none;
-}
-ul li::before{
-    content: "\025cf";
-    position: relative;
-    left: -20px;
-    font-size: 18px;
-    font-weight: 700;
-}
-
-li{
-    padding-top: calc(var(--p)*2);
-    padding-bottom: calc(var(--p)*2);
-    padding-left: calc(var(--p)*5);
-    padding-right: calc(var(--p)*2);
-    border-bottom: 1px solid var(--gray);
-    display: flex;
-}
-li .list-content{
-    width: 95%;
-}
-li .list-title{
-    font-weight: 700;
-    font-size: 17px;
-}
-.notification{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
+.list .item::after{
+    font-size: .75rem;
+    content: attr(data-notify);
+    position: absolute;
+    top: calc(50% - .75rem);
+    right: calc(var(--p)*2);
+    padding: calc(var(--p)/2);
+    background-color: var(--notify-bg);
+    color: var(--notify-text);
     border-radius: var(--p);
-    width: 35px;
-    height: 25px;
-    background-color: var(--l-blue);
-    color: var(--light);
+}
+
+.list.order{
+    counter-reset: list;
+}
+.list.order .item::before{
+    counter-increment: list;
+    content: counter(list) ". ";
 }

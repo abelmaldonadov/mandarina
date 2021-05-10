@@ -28,6 +28,10 @@
     --l-sky: rgb(217, 228, 251);
     --l-pink: rgb(241, 165, 206);
     --l-brown: rgb(214, 197, 186);
+    /* NOTIFY */
+    --notify-bg: rgb(190, 150, 219);
+    --notify-text: rgb(255, 255, 255);
+
     /* BORDER - LINE */
     --line: 1px;
     /* SPACE */

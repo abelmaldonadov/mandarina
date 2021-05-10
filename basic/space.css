@@ -11,6 +11,9 @@
     justify-content: flex-end;
     align-items: center;
 }
+hr{
+    border: 1px solid var(--light);
+}
 /* PADDING */
 .p-0{ padding: 0; }
 .p-1{ padding: calc(var(--p)*1); }
