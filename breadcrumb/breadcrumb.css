@@ -6,7 +6,7 @@
     padding: var(--p);
     margin-right: 25px;
     border-radius: 3px;
-    background-color: var(--gray);
+    background-color: var(--light);
     position: relative;
     z-index: 1;
 }
@@ -21,7 +21,11 @@
     width: 30px;
     height: 30px;
     border-radius: 3px;
-    background-color: var(--gray);
+    background-color: var(--light);
     transform: rotate(45deg);
     z-index: -1;
+}
+.breadcrumb .item.active, .breadcrumb .item.active::before{
+    background-color: var(--notify-bg);
+    color: var(--notify-text);
 }
