@@ -11,10 +11,24 @@
     z-index: 999;
 }
 .spinner .content{
-    width: 30px;
-    height: 30px;
+    position: relative;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
-    background-color: var(--l-purple);
+    border-top: 7.5px solid var(--notify-bg);
+    border-bottom: 7.5px solid transparent;
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
+}
+.spinner .mask1, .spinner .mask2{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border-top: 7.5px solid var(--notify-bg);
+    border-bottom: 7.5px solid transparent;
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
 }
 .spinner.active{
     display: flex;
@@ -22,26 +36,33 @@
 .spinner.active .content{
     animation-name: spinner;
     animation-iteration-count: infinite;
-    animation-duration: 4s;
+    animation-duration: 1.5s;
+}
+.spinner.active .mask1{
+    animation-name: mask1;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-delay: .15s;
+}
+.spinner.active .mask2{
+    animation-name: mask2;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-delay: .3s;
 }
 
 @keyframes spinner {
-    0%{
-        background-color: var(--l-green);
-    }
-    20%{
-        background-color: var(--l-red);
-    }
-    40%{
-        background-color: var(--l-orange);
-    }
-    60%{
-        background-color: var(--l-pink);
-    }
-    80%{
-        background-color: var(--l-blue);
-    }
     100%{
-        background-color: var(--l-green);
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes mask1 {
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes mask2 {
+    100%{
+        transform: rotateZ(360deg);
     }
 }

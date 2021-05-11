@@ -2,38 +2,36 @@ class Slider
 {
     constructor(slider) {
         this.slider = "#"+slider.id
+        this.animation = slider.dataset.animation // AUTO; OPACITY; SLIDE; RADIANCE
+        this.duration = slider.dataset.duration * 1000
         this.numFrames = slider.children.length
-        this.animation = slider.dataset.animation // AUTO
-        this.duration = slider.dataset.duration
-        this.play()
+        slider.children[0].classList.add("active")
+        slider.children[1].classList.add("next")
+        this.autoPlay()
     }
 
-    async play() {
-        for (let i = 0; i < this.numFrames; i++) {
-            document.querySelector(this.slider).setAttribute("style", "--animation-duration: " + this.duration +"s;")
-            document.querySelectorAll(this.slider + " .item")[0].classList.add("active") // ACTIVAR EL PRIMER FRAME
-            await this.next()
-        }
-    }
-
-    next() {
-        return new Promise(resolve => {
-            let i = 0
-            document.querySelectorAll(this.slider + " .item")[i].classList.add("active")
+    async autoPlay() {
+        this.next(0)
+        let i = 1 // EL INDICE DEL FRAME ACTUAL
+        await new Promise(resolve => {
             setInterval(() => {
-                if (i == this.numFrames - 1) {
-                    i = 0
-                } else {
-                    i++
-                }
-                // CAMBIAR FRAME
-                // document.querySelectorAll(this.slider + " .item").forEach(item => item.classList.remove("active"))
-                document.querySelectorAll(this.slider + " .item")[i].classList.add("active")
-                
-                console.log(i + ": next")
-                
-            }, this.duration * 1000);
+                this.next(i)
+                if (i == this.numFrames - 1) { i = 0 }
+                else { i++ }
+            }, this.duration);
         })
+    }
+
+    next(i) {
+        let j
+        if (i == this.numFrames - 1) { j = 0 }
+        else { j = i+1 }
+        // ACTIVAR FRAME ACTUAL
+        document.querySelector(this.slider + " .item.active").classList.remove("active")
+        document.querySelector(this.slider).children[i].classList.add("active")
+        // ACTIVAR FRAME SIGUIENTE
+        document.querySelector(this.slider + " .item.next").classList.remove("next")
+        document.querySelector(this.slider).children[j].classList.add("next")
     }
 }
 document.querySelectorAll(".slider").forEach(slider => {
