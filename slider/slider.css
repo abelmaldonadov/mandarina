@@ -38,15 +38,15 @@
 [data-animation="slide"].slider .item{
     visibility: hidden;
 }
-[data-animation="slide"].slider .item.next{
-    animation-name: slideNext;
+[data-animation="slide"].slider .item.active{
+    animation-name: slideActive;
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     visibility: visible;
 }
-[data-animation="slide"].slider .item.active{
-    animation-name: slideActive;
+[data-animation="slide"].slider .item.next{
+    animation-name: slideNext;
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -60,6 +60,7 @@
     transition: all 2s;
 }
 
+/* ENTRA -> */
 @keyframes slideActive {
     0%{
         transform: translateX(-100%);
@@ -71,6 +72,7 @@
         transform: translateX(0%);
     }
 }
+/* SE VA -> */
 @keyframes slideNext {
     0%{
         transform: translateX(0%);
