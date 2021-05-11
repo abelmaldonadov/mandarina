@@ -2,20 +2,20 @@
     /* COLORS */
     /* GRAY SCALE */
     --white: rgb(255, 255, 255);
-    --light: rgb(243, 243, 243);
-    --gray: rgb(183, 183, 183);
-    --dark: rgb(52, 57, 62);
+    --light: rgb(249, 249, 251);
+    --gray: rgb(119, 108, 100);
+    --dark: rgb(80, 80, 80);
     --black: rgb(0, 0, 0);
     /* PRIMARY */
-    --green: rgb(70, 136, 19);
-    --red: rgb(176, 0, 21);
+    --green: rgb(62, 224, 156);
+    --red: rgb(241, 41, 15);
     --yellow: rgb(255, 210, 0);
-    --blue: rgb(31, 32, 68);
+    --blue: rgb(48, 158, 255);
     /* SECONDARY */
     --orange: rgb(255, 145, 68);
-    --purple: rgb(67, 0, 116);
-    --sky: rgb(152, 219, 236);
-    --pink: rgb(244, 18, 143);
+    --purple: rgb(125, 66, 218);
+    --sky: rgb(59, 218, 229);
+    --pink: rgb(247, 56, 89);
     --brown: rgb(136, 64, 17);
     /* PASTEL */
     --l-green: rgb(220, 250, 198);
@@ -24,11 +24,11 @@
     --l-blue: rgb(151, 154, 209);
     --l-orange: rgb(243, 192, 156);
     --l-purple: rgb(190, 150, 219);
-    --l-sky: rgb(217, 228, 251);
+    --l-sky: rgb(220, 243, 255);
     --l-pink: rgb(241, 165, 206);
     --l-brown: rgb(214, 197, 186);
     /* NOTIFY */
-    --notify-bg: rgb(190, 150, 219);
+    --notify-bg: rgb(255, 145, 68);
     --notify-text: rgb(255, 255, 255);
 
     /* BORDER - LINE */

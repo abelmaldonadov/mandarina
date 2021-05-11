@@ -1,0 +1,23 @@
+.control{
+    width: 100%;
+    box-shadow: 0 5px 10px var(--light);
+}
+.control>.header{
+    padding: calc(var(--p)*1.5);
+    border-bottom: 3px solid var(--light);
+    position: relative;
+}
+.control>.header *{
+    color: var(--dark);
+}
+.control>.body{
+    padding: calc(var(--p)*1.5);
+}
+.control>.footer{
+    padding: calc(var(--p)*1.5);
+    display: flex;
+    justify-content: flex-end;
+}
+.control>.footer .btn{
+    margin-left: var(--m);
+}
