@@ -2,53 +2,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 3px 1px rgba(56, 55, 56, 0.2);
+    box-shadow: var(--shadow);
     border-radius: 25px;
-    height: 30px;
 }
-.number-page a{
+.pagination .item{
+    padding: calc(var(--p)/2);
     width: 100%;
-    cursor: pointer;
-}
-.number-page, .prev-page, .next-page{
-    flex-grow: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    margin: auto 10px;
+    z-index: 2;
     position: relative;
-    transition: all .5s;
-    cursor: pointer;
     text-align: center;
 }
-.number-page::after{
+
+.pagination .item::before{
     content: "";
     position: absolute;
     left: 50%;
     top: 50%;
     width: 0px;
-    height: 0px;
     transform: translate(-50%, -50%);
-    background-color: var(--dark);
+    height: 0px;
+    background-color: var(--notify-bg);
     border-radius: 50%;
     transition: all .5s;
     z-index: -1;
 }
-.number-page a:hover{
-    color: white;
-}
-.number-page:hover::after{
+.pagination .item:hover::before{
     width: 40px;
     height: 40px;
 }
 
-
-
-
-.prev-page::before{
+.pagination .item.prev::after{
     content: "\025c0";
+    z-index: 2;
+    color: var(--dark);
 }
-.next-page::before{
+.pagination .item.next::after{
     content: "\025b6";
+    z-index: 2;
+    color: var(--dark);
+}
+.pagination .item:hover, .pagination .item:hover::after{
+    color: var(--notify-text);
 }

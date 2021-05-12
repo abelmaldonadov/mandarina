@@ -30,6 +30,8 @@
     /* NOTIFY */
     --notify-bg: rgb(255, 145, 68);
     --notify-text: rgb(255, 255, 255);
+    /* SHADOW */
+    --shadow: 0 0 10px 10px rgb(245, 245, 245);
 
     /* BORDER - LINE */
     --line: 1px;

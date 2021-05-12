@@ -20,7 +20,7 @@ input[type="text"], input[type="mail"], input[type="pass"]{
 input[type="text"]:focus, input[type="mail"]:focus, input[type="pass"]:focus, select:focus{
     outline: none;
     border: var(--line) solid var(--gray);
-    box-shadow: 0 0 5px var(--gray);
+    box-shadow: 0 0 5px 5px var(--shadow);
 }
 /* SELECT */
 select{

@@ -1,6 +1,6 @@
 .control{
     width: 100%;
-    box-shadow: 0 5px 10px var(--light);
+    box-shadow: var(--shadow);
 }
 .control>.header{
     padding: calc(var(--p)*1.5);
