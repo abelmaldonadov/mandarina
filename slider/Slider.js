@@ -5,6 +5,7 @@ class Slider
         this.animation = slider.dataset.animation // AUTO; OPACITY; SLIDE; RADIANCE
         this.duration = slider.dataset.duration * 1000
         this.numFrames = slider.children.length
+        slider.children[this.numFrames-1].classList.add("prev")
         slider.children[0].classList.add("active")
         slider.children[1].classList.add("next")
         this.autoPlay()
@@ -23,9 +24,15 @@ class Slider
     }
 
     next(i) {
-        let j
+        let h // FRAME ANTERIOR
+        if (i == 0) { h = this.numFrames -1 }
+        else { h = i-1 }
+        let j // FRAME SIGUIENTE
         if (i == this.numFrames - 1) { j = 0 }
         else { j = i+1 }
+        // ACTIVAR EL FRAME ANTERIOR
+        document.querySelector(this.slider + " .item.prev").classList.remove("prev")
+        document.querySelector(this.slider).children[h].classList.add("prev")
         // ACTIVAR FRAME ACTUAL
         document.querySelector(this.slider + " .item.active").classList.remove("active")
         document.querySelector(this.slider).children[i].classList.add("active")
