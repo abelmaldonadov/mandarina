@@ -1,0 +1,118 @@
+.card{
+    width: 330px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+.card .card-img img{
+    width: 330px;
+    height: 220px;
+}
+.card .card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .card-text{
+    margin-bottom: 10px;
+}
+.card .card-text h1, .card .card-text h2, .card .card-text h3, .card .card-text h4, .card .card-text h5, .card .card-text h6{
+    font-weight: 600;
+}
+.card .card-text p, .card .card-text span{
+    font-size: 16px;
+}
+.card .card-text a{
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--dark);
+    position: relative;
+}
+
+
+
+.card:hover > .card-img img{
+    animation-name: card-img-open;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.card:not(:hover) > .card-img img{
+    animation-name: card-img-close;
+    animation-duration: 1s;
+}
+.card:hover > .card-text{
+    animation-name: open-cards;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.card:not(:hover) > .card-text{
+    animation-name: close-cards;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.card:hover > .card-text a{
+    animation-name: open-card-link;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.card:not(:hover) > .card-text a{
+    animation-name: close-card-link;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes open-cards {
+    0%{
+        height: 191px;
+    }
+    100%{
+        height: 0;
+        padding-top: 20px;
+    }
+}
+@keyframes close-cards {
+    0%{
+        height: 10px;
+    }
+    100%{
+        height: 191px;
+    }
+}
+
+@keyframes card-img-open {
+    100%{
+        width: calc(330px*3);
+        height: 390px;
+    }
+}
+@keyframes card-img-close {
+    0%{
+        width: calc(330px*3);
+        height: 390px;
+    }
+    100%{
+        width: 330px;
+        height: 220px;
+    }
+}
+
+@keyframes open-card-link {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -180px;
+    }
+}
+@keyframes close-card-link {
+    0%{
+        top: -180px;
+    }
+    100%{
+        top: 0;
+    }
+}

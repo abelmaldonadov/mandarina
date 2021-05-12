@@ -7,7 +7,6 @@
     --dark: rgb(52, 57, 62);
     --black: rgb(0, 0, 0);
     /* PRIMARY */
-    /* --green: rgb(121, 189, 69); */
     --green: rgb(70, 136, 19);
     --red: rgb(176, 0, 21);
     --yellow: rgb(255, 210, 0);
@@ -28,6 +27,10 @@
     --l-sky: rgb(217, 228, 251);
     --l-pink: rgb(241, 165, 206);
     --l-brown: rgb(214, 197, 186);
+    /* NOTIFY */
+    --notify-bg: rgb(190, 150, 219);
+    --notify-text: rgb(255, 255, 255);
+
     /* BORDER - LINE */
     --line: 1px;
     /* SPACE */
