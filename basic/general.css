@@ -18,15 +18,15 @@
     --pink: rgb(247, 56, 89);
     --brown: rgb(136, 64, 17);
     /* PASTEL */
-    --l-green: rgb(220, 250, 198);
+    --l-green: rgb(236, 246, 229);
     --l-red: rgb(255, 203, 209);
     --l-yellow: rgb(247, 238, 199);
-    --l-blue: rgb(151, 154, 209);
+    --l-blue: rgb(230, 240, 255);
     --l-orange: rgb(243, 192, 156);
     --l-purple: rgb(190, 150, 219);
     --l-sky: rgb(220, 243, 255);
     --l-pink: rgb(241, 165, 206);
-    --l-brown: rgb(214, 197, 186);
+    --l-brown: rgb(238, 236, 253);
     /* NOTIFY */
     --notify-bg: rgb(255, 145, 68);
     --notify-text: rgb(255, 255, 255);
