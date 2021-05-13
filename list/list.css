@@ -19,12 +19,16 @@
     color: var(--notify-text);
     border-radius: var(--border-radius);
 }
+ul.list .item::marker, ol.list .item::marker{
+    content: none;
+}
 
-.list.order{
+ol.list{
     counter-reset: list;
 }
-.list.order .item::before{
+ol.list .item::before{
     counter-increment: list;
-    content: counter(list) ". ";
+    content: counter(list) ".";
     display: inline-block;
+    margin-right: var(--m);
 }
