@@ -1,4 +1,6 @@
 .btn,.btn-md{
+    border: var(--border);
+    border-radius: var(--border-radius);
     font-size: 1rem;
     padding: calc(var(--p)*1.5);
     border: none;

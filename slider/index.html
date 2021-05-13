@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dropdown</title>
+    <title>Slider</title>
 
     <link rel="stylesheet" href="../basic/general.css">
     <link rel="stylesheet" href="../basic/grid.css">
@@ -14,25 +14,20 @@
     <link rel="stylesheet" href="../basic/btn.css">
 
     <!-- INSERT STYLE -->
-    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="slider.css">
 </head>
 <body>
     
-    <!-- DROPDOWN -->
-    <div class="dropdown">
-        <button class="btn dropdown-open">Dropdown</button>
-        <div class="content">
-            <a class="item" href="#">Item 1</a>
-            <a class="item" href="#">Item 2</a>
-            <a class="item" href="#">Item 3</a>
-            <hr>
-            <a class="item" href="#">Item 4</a>
-            <a class="item red" href="#">Item 5</a>
-        </div>
+    <!-- SLIDER -->
+    <!-- En el caso de SLIDE funciona solo con 3 frames como mínimo -->
+    <div class="slider" id="slider2" data-animation="radiance" data-duration="4" data-height="300">
+        <div class="item"><img src="../images/brittani-burns-fCD__Wr7IPs-unsplash.jpg" alt="..."></div>
+        <div class="item"><img src="../images/josh-rinard-2kAfdQX1r10-unsplash.jpg" alt="..."></div>
+        <div class="item"><img src="../images/dan-gold-N7RiDzfF2iw-unsplash.jpg" alt="..."></div>
     </div>
 
     <!-- INSERT SCRIPT -->
-    
+    <script src="Slider.js"></script>
 
 </body>
 </html>

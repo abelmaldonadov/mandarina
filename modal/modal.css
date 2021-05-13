@@ -10,24 +10,33 @@
     background-color: rgba(248, 248, 248, 0.5);
     z-index: 999;
 }
-.modal .content{
+.modal>.content{
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: var(--p);
     transition: all 1s;
-    transform: translateY(-1000%);
+    transform: translateX(-200%);
 }
 .modal.active{
     display: flex;
 }
-.modal.active .content{
+.modal.active>.content{
     transition: all 1s;
     transform: translateY(0%);
 }
 
-.modal .content .header{
+.modal>.content>.header{
     padding: var(--p);
 }
-.modal .content .body{
+.modal>.content>.body{
     padding: var(--p);
 }
-.modal .content .footer{
+.modal>.content>.footer{
     padding: var(--p);
+    display: flex;
+    justify-content: flex-end;
+}
+.modal>.content>.footer>*{
+    margin-left: var(--m);
 }

@@ -34,7 +34,9 @@
     --shadow: 0 0 10px 10px rgb(245, 245, 245);
 
     /* BORDER - LINE */
-    --line: 1px;
+    --border: none;
+    /* BORDER - RADIUS */
+    --border-radius: 25px;
     /* SPACE */
     --p: 10px;
     --m: 10px;

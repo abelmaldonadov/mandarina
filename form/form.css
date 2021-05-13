@@ -7,20 +7,21 @@
 label{
     display: block;
     width: 100%;
+    padding-bottom: var(--p);
+    padding-top: var(--p);
 }
 /* INPUT TEXT, MAIL, PASS */
 input[type="text"], input[type="mail"], input[type="pass"]{
     display: block;
+    border: var(--border);
+    /* border-radius: var(--border-radius); */
     width: 100%;
     height: calc(var(--p)*3);
     padding: var(--p);
-    cursor: pointer;
-    border: var(--line) solid var(--gray);
 }
 input[type="text"]:focus, input[type="mail"]:focus, input[type="pass"]:focus, select:focus{
+    box-shadow: var(--shadow);
     outline: none;
-    border: var(--line) solid var(--gray);
-    box-shadow: 0 0 5px 5px var(--shadow);
 }
 /* SELECT */
 select{
@@ -29,8 +30,7 @@ select{
     height: calc(var(--p)*3);
     padding-left: calc(var(--p)/2);
     padding-right: calc(var(--p)/2);
-    cursor: pointer;
-    border: var(--line) solid var(--gray);
+    border: 1px solid var(--gray);
 }
 /* CHECK Y RADIO */
 input[type="checkbox"], input[type="radio"]{
@@ -41,7 +41,6 @@ input[type="checkbox"], input[type="radio"]{
     padding: 5px 15px 5px 33px;
     display: inline-block;
     position: relative;
-    cursor: pointer;
 }
 .radio:hover, .check:hover{
     background-color: var(--light);
@@ -52,7 +51,7 @@ input[type="checkbox"], input[type="radio"]{
     height: 12px;
     display: inline-block;
     background-color: none;
-    border: var(--line) solid var(--dark);
+    border: 1px solid var(--dark);
     border-radius: 50%;
     position: absolute;
     left: 10px;

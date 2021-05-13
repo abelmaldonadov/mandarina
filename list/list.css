@@ -1,23 +1,23 @@
 .list{
+    border: var(--border);
+    border-radius: var(--border-radius);
     display: block;
     width: 100%;
 }
 .list .item{
     padding: calc(var(--p)*2);
     position: relative;
-    /* border: 1px solid var(--light); */
-
 }
 .list .item::after{
-    font-size: .75rem;
     content: attr(data-notify);
+    font-size: .75rem;
     position: absolute;
     top: calc(50% - .75rem);
     right: calc(var(--p)*2);
     padding: calc(var(--p)/2);
     background-color: var(--notify-bg);
     color: var(--notify-text);
-    border-radius: var(--p);
+    border-radius: var(--border-radius);
 }
 
 .list.order{
@@ -26,4 +26,5 @@
 .list.order .item::before{
     counter-increment: list;
     content: counter(list) ". ";
+    display: inline-block;
 }

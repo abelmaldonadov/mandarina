@@ -2,18 +2,21 @@
     position: relative;
     display: inline-block;
 }
-.dropdown * {
-    font-size: 1rem;
+.dropdown *{
+    cursor: pointer;
 }
 .dropdown .dropdown-open:after{
     content: " \025bc";
     opacity: .5;
 }
 .dropdown .content{
-    display: none;
+    border: var(--border);
+    border-radius: var(--border-radius);
     position: absolute;
-    z-index: 1;
-    border: 1px solid var(--light);
+    overflow: hidden;
+    transition: all .5s;
+    visibility: hidden;
+    height: 0;
 }
 .dropdown .content .item{
     cursor: pointer;
@@ -28,5 +31,7 @@
     background-color: var(--light);
 }
 .dropdown:hover .content{
-    display: block;
+    transition: all .5s;
+    visibility: visible;
+    height: 100%;
 }

@@ -1,14 +1,14 @@
 .control{
+    border: var(--border);
+    border-radius: var(--border-radius);
     width: 100%;
     box-shadow: var(--shadow);
+    padding: var(--p);
 }
 .control>.header{
     padding: calc(var(--p)*1.5);
     border-bottom: 3px solid var(--light);
     position: relative;
-}
-.control>.header *{
-    color: var(--dark);
 }
 .control>.body{
     padding: calc(var(--p)*1.5);
@@ -18,6 +18,6 @@
     display: flex;
     justify-content: flex-end;
 }
-.control>.footer .btn{
+.control>.footer>.btn{
     margin-left: var(--m);
 }

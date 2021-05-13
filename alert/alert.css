@@ -1,6 +1,11 @@
 .alert{
+    border: var(--border);
+    border-radius: var(--border-radius);
     padding: calc(var(--p)*2);
     position: relative;
+    cursor: pointer;
+}
+.alert *{
     cursor: pointer;
 }
 .alert.alert-close{

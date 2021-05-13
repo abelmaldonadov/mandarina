@@ -1,9 +1,9 @@
 .pagination{
+    border-radius: var(--border-radius);
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: var(--shadow);
-    border-radius: 25px;
 }
 .pagination .item{
     padding: calc(var(--p)/2);

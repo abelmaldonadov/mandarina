@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal</title>
+    <title>Control</title>
 
     <link rel="stylesheet" href="../basic/general.css">
     <link rel="stylesheet" href="../basic/grid.css">
@@ -14,27 +14,32 @@
     <link rel="stylesheet" href="../basic/btn.css">
 
     <!-- INSERT STYLE -->
-    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="control.css">
 </head>
 <body>
     
-    <!-- MODAL -->
-    <button class="btn green modal-open" data-target="#modal1">Modal</button>
-    <div class="modal" id="modal1">
-        <div class="content gray">
+    <!-- Control -->
+    <div class="container">
+        <div class="m-6"></div>
+
+        <div class="control">
             <div class="header">
-                <h5>Modal 1</h5>
+                <h5>Control</h5>
             </div>
-            <div class="body"></div>
+            <div class="body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, recusandae unde necessitatibus rem labore earum ratione quod modi doloremque. 
+                Id ut exercitationem doloribus maxime expedita explicabo necessitatibus cum minima sit?
+            </div>
             <div class="footer">
-                <button class="btn red modal-close">Cancelar</button>
-                <button class="btn green modal-close">Aceptar</button>
+                <button class="btn red">Cancelar</button>
+                <button class="btn green">Aceptar</button>
             </div>
         </div>
+
     </div>
 
     <!-- INSERT SCRIPT -->
-    <script src="modal.js"></script>
+    
 
 </body>
 </html>

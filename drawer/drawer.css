@@ -12,6 +12,7 @@
     padding-bottom: calc(var(--p)*3);
     background-color: var(--notify-bg);
     z-index: 2;
+    border-radius: 0 50% 50% 0;
 }
 .drawer{
     width: 300px;
@@ -27,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    padding: var(--p);
     margin-bottom: var(--m);
 }
 .drawer>.item{
@@ -65,7 +66,7 @@
 }
 .drawer-open.active::before{
     transition: all .5s;
-    transform: rotateY(180deg) translateX(-300px);
+    transform: rotateY(180deg) translateX(-260px);
 }
 .drawer-open::before{
     transition: all .5s;

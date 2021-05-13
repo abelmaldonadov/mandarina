@@ -1,22 +1,20 @@
 .card{
+    border: var(--border);
+    border-radius: var(--border-radius);
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    /* height: 400px; */
     position: relative;
-    border-radius: 15px;
     box-shadow: var(--shadow);
     overflow: hidden;
-}
-.card:hover{
-    cursor: pointer;
 }
 .card .header{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 50%;
     overflow: hidden;
@@ -29,6 +27,8 @@
     width: 100%;
     height: 50%;
     padding: calc(var(--p)*2);
+    position: absolute;
+    top: 50%;
 }
 .card .body *{
     display: block;
@@ -38,19 +38,16 @@
 
 [data-animation="auto"].card .header{
     transition: all .5s;
-    z-index: 2;
 }
-[data-animation="auto"].card:hover .header{
+[data-animation="auto"].card .header:hover{
     transition: all .5s;
     width: 200%;
-    position: absolute;
-    top: 0;
-    overflow: visible;
+    height: 100%;
 }
-/* .card .header{
-    width: 200%;
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    overflow: visible;
-} */
+[data-animation="auto"].card .body{
+    transition: all .5s;
+}
+[data-animation="auto"].card .header:hover + .body{
+    transition: all .5s;
+    top: 100%;
+}
