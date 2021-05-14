@@ -13,25 +13,19 @@
     border: var(--border);
     border-radius: var(--border-radius);
     position: absolute;
+    height: auto;
     overflow: hidden;
-    transition: all .5s;
-    visibility: hidden;
-    height: 0;
+    display: none;
 }
 .dropdown .content .item{
-    cursor: pointer;
     min-width: 120px;
-}
-.dropdown .content .item{
     display: block;
-    cursor: pointer;
     padding: var(--p);
+    background-color: var(--white);
 }
 .dropdown .content .item:hover{
     background-color: var(--light);
 }
 .dropdown:hover .content{
-    transition: all .5s;
-    visibility: visible;
-    height: 100%;
+    display: block;
 }
