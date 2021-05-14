@@ -1,6 +1,9 @@
 .table{
     display: table;
     width: 100%;
+    box-shadow: var(--shadow);
+    border: var(--border);
+    border-radius: var(--border-radius);
 }
 .table thead{
     display: table-header-group;

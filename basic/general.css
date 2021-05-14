@@ -18,15 +18,15 @@
     --pink: rgb(247, 56, 89);
     --brown: rgb(136, 64, 17);
     /* PASTEL */
-    --l-green: rgb(236, 246, 229);
-    --l-red: rgb(255, 203, 209);
-    --l-yellow: rgb(247, 238, 199);
-    --l-blue: rgb(230, 240, 255);
-    --l-orange: rgb(243, 192, 156);
-    --l-purple: rgb(190, 150, 219);
-    --l-sky: rgb(220, 243, 255);
-    --l-pink: rgb(241, 165, 206);
-    --l-brown: rgb(238, 236, 253);
+    --l-green: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    --l-red: linear-gradient(to top, #f85787 0%, #ff8d7e 100%);
+    --l-yellow: linear-gradient(to top, #fddb92 0%, #faffd1 100%);
+    --l-blue: linear-gradient(to top, #6399f7 0%, #56d1fa 100%);
+    --l-orange: linear-gradient(to top, #ffa557 0%, #ffc490 100%);
+    --l-purple: linear-gradient(to top, #9890e3 0%, #b1cef4 100%);
+    --l-sky: linear-gradient(to top, #b0cefc 0%, #daebfc 108%);
+    --l-pink: linear-gradient(to top, #f84eb1 0%, #fca0c6 100%);
+    --l-brown: linear-gradient(to top, #eca18c 0%, #fdd0ae 100%);
     /* NOTIFY */
     --notify-bg: rgb(255, 145, 68);
     --notify-text: rgb(255, 255, 255);
