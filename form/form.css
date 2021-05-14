@@ -1,36 +1,34 @@
-.form .item{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: var(--m);
-}
-label{
+.form{
     display: block;
-    width: 100%;
-    padding-bottom: var(--p);
-    padding-top: var(--p);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: calc(var(--p)*2);
 }
 /* INPUT TEXT, MAIL, PASS */
 input[type="text"], input[type="mail"], input[type="pass"]{
-    display: block;
     border: var(--border);
-    /* border-radius: var(--border-radius); */
+    border-radius: var(--border-radius);
     width: 100%;
-    height: calc(var(--p)*3);
     padding: var(--p);
+    font-size: 1rem;
+    background-color: var(--light);
+    margin-bottom: var(--m);
 }
-input[type="text"]:focus, input[type="mail"]:focus, input[type="pass"]:focus, select:focus{
-    box-shadow: var(--shadow);
+input:focus, select:focus{
     outline: none;
 }
 /* SELECT */
 select{
     display: block;
+    border: var(--border);
+    border-radius: var(--border-radius);
     width: 100%;
-    height: calc(var(--p)*3);
-    padding-left: calc(var(--p)/2);
-    padding-right: calc(var(--p)/2);
-    border: 1px solid var(--gray);
+    padding: var(--p);
+    font-size: 1rem;
+    background-color: var(--light);
+    color: var(--gray);
+    margin-bottom: var(--m);
 }
 /* CHECK Y RADIO */
 input[type="checkbox"], input[type="radio"]{
@@ -39,7 +37,7 @@ input[type="checkbox"], input[type="radio"]{
 .radio, .check{
     color: var(--dark);
     padding: 5px 15px 5px 33px;
-    display: inline-block;
+    display: block;
     position: relative;
 }
 .radio:hover, .check:hover{
@@ -49,9 +47,9 @@ input[type="checkbox"], input[type="radio"]{
     content: "";
     width: 12px;
     height: 12px;
-    display: inline-block;
+    display: block;
     background-color: none;
-    border: 1px solid var(--dark);
+    border: 1px solid var(--notify-bg);
     border-radius: 50%;
     position: absolute;
     left: 10px;
@@ -68,7 +66,7 @@ input[type="radio"]:checked + label::after, input[type="checkbox"]:checked + lab
     width: 8px;
     height: 8px;
     display: inline-block;
-    background-color: var(--dark);
+    background-color: var(--notify-bg);
     position: absolute;
     left: 13px;
     top: 11px;
