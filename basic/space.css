@@ -1,5 +1,6 @@
 .center{
     margin: auto;
+    text-align: center;
 }
 .flex-center{
     display: flex;
