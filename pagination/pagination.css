@@ -21,7 +21,7 @@
     width: 0px;
     transform: translate(-50%, -50%);
     height: 0px;
-    background-color: var(--notify-bg);
+    background: var(--notify-bg);
     border-radius: 50%;
     transition: all .5s;
     z-index: -1;

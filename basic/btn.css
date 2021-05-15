@@ -21,10 +21,10 @@
     min-width: 120px;
 }
 .btn:hover{
-    filter: brightness(90%);
+    filter: brightness(97.5%);
 }
 .btn:active{
-    filter: brightness(75%);
+    filter: brightness(95%);
 }
 .btn-block{
     width: 100%;

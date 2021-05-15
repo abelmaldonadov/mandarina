@@ -5,6 +5,10 @@
 .dropdown *{
     cursor: pointer;
 }
+.dropdown-open{
+    color: var(--dark);
+    font-weight: 500;
+}
 .dropdown .dropdown-open:after{
     content: " \025bc";
     opacity: .5;
@@ -22,10 +26,10 @@
     min-width: 120px;
     display: block;
     padding: var(--p);
-    background-color: var(--white);
+    background: var(--white);
 }
 .dropdown .content .item:hover{
-    background-color: var(--light);
+    background: var(--light);
 }
 .dropdown:hover .content{
     display: block;

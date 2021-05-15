@@ -15,8 +15,10 @@ input[type="text"], input[type="mail"], input[type="pass"]{
     background-color: var(--light);
     margin-bottom: var(--m);
 }
-input:focus, select:focus{
+input:focus, select:focus, input:hover, select:hover{
     outline: none;
+    filter: brightness(97.5%);
+    cursor: pointer;
 }
 /* SELECT */
 select{
@@ -26,7 +28,7 @@ select{
     width: 100%;
     padding: var(--p);
     font-size: 1rem;
-    background-color: var(--light);
+    background: var(--light);
     color: var(--gray);
     margin-bottom: var(--m);
 }
@@ -41,15 +43,16 @@ input[type="checkbox"], input[type="radio"]{
     position: relative;
 }
 .radio:hover, .check:hover{
-    background-color: var(--light);
+    background: var(--light);
+    cursor: pointer;
 }
 .radio::before, .check::before{
     content: "";
     width: 12px;
     height: 12px;
     display: block;
-    background-color: none;
-    border: 1px solid var(--notify-bg);
+    background: none;
+    border: 1px solid var(--notify-solid);
     border-radius: 50%;
     position: absolute;
     left: 10px;
@@ -66,7 +69,7 @@ input[type="radio"]:checked + label::after, input[type="checkbox"]:checked + lab
     width: 8px;
     height: 8px;
     display: inline-block;
-    background-color: var(--notify-bg);
+    background: var(--notify-bg);
     position: absolute;
     left: 13px;
     top: 11px;

@@ -4,17 +4,26 @@
     box-shadow: var(--shadow);
     border: var(--border);
     border-radius: var(--border-radius);
+    border-spacing: 0;
+    overflow: hidden;
 }
 .table thead{
     display: table-header-group;
 }
-.table tbody tr:nth-child(odd){
-    background-color: var(--white);
+.table tr:hover{
+    filter: brightness(97.5%);
 }
 .table th, .table td{
+    cursor: pointer;
     display: table-cell;
-    padding: calc(var(--p)/2);
+    padding: var(--p);
 }
 .table tbody{
     display: table-footer-group;
+}
+.table tbody tr:nth-child(odd){
+    background: var(--light);
+}
+.table tbody tr:nth-child(even){
+    background: var(--white);
 }

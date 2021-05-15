@@ -32,7 +32,7 @@ a:hover{
 /* OTHERS */
 .b{ font-weight: bolder; }
 .i{ font-style: italic; }
-.important{ background-color: var(--yellow); }
+.important{ background: var(--yellow); }
 .underline{ text-decoration: underline; }
 .overline{ text-decoration: overline; }
 .line{ text-decoration: line-through; }

@@ -16,7 +16,7 @@
     top: calc(50% - .75rem);
     right: calc(var(--p)*2);
     padding: calc(var(--p)/2);
-    background-color: var(--notify-bg);
+    background: var(--notify-bg);
     color: var(--notify-text);
     border-radius: var(--border-radius);
 }

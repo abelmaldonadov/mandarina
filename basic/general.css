@@ -28,8 +28,9 @@
     --l-pink: linear-gradient(to top, #f84eb1 0%, #fca0c6 100%);
     --l-brown: linear-gradient(to top, #eca18c 0%, #fdd0ae 100%);
     /* NOTIFY */
-    --notify-bg: rgb(255, 145, 68);
+    --notify-bg: linear-gradient(to top, #ffa557 0%, #ffc490 100%);
     --notify-text: rgb(255, 255, 255);
+    --notify-solid: rgb(255, 145, 68);
     /* SHADOW */
     --shadow: 0 0 10px 10px rgb(245, 245, 245);
 

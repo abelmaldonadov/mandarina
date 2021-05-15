@@ -3,7 +3,8 @@
 }
 [data-title]::after{
     content: attr(data-title);
-    background-color: var(--dark);
+    display: block;
+    background: var(--dark);
     color: var(--white);
     padding: var(--p);
     border-radius: 0px 10px 10px 10px;
@@ -13,11 +14,9 @@
     width: auto;
     z-index: 1000;
     opacity: 0;
-    visibility: hidden;
-    display: block;
+    transition: all .25s ease .25s;
 }
 [data-title]:hover::after{
     transition: all .25s ease .25s;
     opacity: .75;
-    visibility: visible;
 }
