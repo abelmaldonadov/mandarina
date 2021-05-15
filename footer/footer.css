@@ -17,8 +17,13 @@
     flex-direction: column;
     padding: calc(var(--p)*4);
 }
+.footer .brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .footer .brand img{
-    width: 130px;
+    width: 50%;
 }
 .footer .description{
     max-width: 350px;
