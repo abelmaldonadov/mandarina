@@ -12,14 +12,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 .navbar .item{
     padding: var(--p);
 }
-.navbar .item.brand{
-    float: left;
+.navbar .brand{
+    padding: var(--p);
+    height: 100%;
 }
-.navbar .item.user{
+.navbar .brand *{
+    height: 100%;
+}
+.navbar .user{
     margin: calc(var(--m)*.5);
     border-radius: 50%;
 }

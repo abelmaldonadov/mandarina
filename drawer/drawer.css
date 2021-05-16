@@ -32,6 +32,9 @@
     padding: var(--p);
     margin-bottom: var(--m);
 }
+.drawer .brand *{
+    width: 100%;
+}
 .drawer>.item{
     display: block;
     width: 100%;
