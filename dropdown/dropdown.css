@@ -31,6 +31,6 @@
 .dropdown .content .item:hover{
     background: var(--light);
 }
-.dropdown:hover .content{
+.dropdown:hover .content, .dropdown:active .content{
     display: block;
 }

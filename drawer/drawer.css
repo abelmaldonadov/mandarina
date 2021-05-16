@@ -13,6 +13,7 @@
     background: var(--notify-bg);
     z-index: 2;
     border-radius: 0 50% 50% 0;
+    box-shadow: var(--shadow);
 }
 .drawer{
     width: 300px;
@@ -22,7 +23,7 @@
     left: -300px;
     z-index: 1;
     padding: calc(var(--p)*2);
-    background: var(--light);
+    box-shadow: none;
 }
 .drawer>.brand{
     display: flex;
@@ -42,21 +43,13 @@
     margin-top: calc(var(--m)/2);
     margin-bottom: calc(var(--m)/2);
 }
-.drawer>.footer{
-    width: 100%;
-    background: var(--light);
-    position: absolute;
-    bottom: 25px;
-    left: 0;
-}
-.drawer>.footer>.item{
-    display: block;
-    text-align: center;
-    padding: calc(var(--m)/2);
-}
 
 /* ACTIVATE DRAWER */
 .drawer.active{
+    border: var(--border);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    box-shadow: var(--shadow);
     transition: all .5s;
     transform: translateX(300px);
 }
@@ -67,6 +60,7 @@
 .drawer-open.active::before{
     transition: all .5s;
     transform: rotateY(180deg) translateX(-260px);
+    box-shadow: none;
 }
 .drawer-open::before{
     transition: all .5s;
