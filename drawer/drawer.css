@@ -24,27 +24,14 @@
     z-index: 1;
     padding: calc(var(--p)*2);
     box-shadow: none;
-}
-.drawer>.brand{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: var(--p);
-    margin-bottom: var(--m);
-}
-.drawer .brand *{
-    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
 }
 .drawer>.item{
     display: block;
     width: 100%;
     padding: var(--p);
-}
-.drawer hr{
-    margin-left: var(--m);
-    margin-right: var(--m);
-    margin-top: calc(var(--m)/2);
-    margin-bottom: calc(var(--m)/2);
 }
 
 /* ACTIVATE DRAWER */
