@@ -1,21 +1,29 @@
 class Spinner
 {
     constructor() {
-        document.querySelector("body").innerHTML += `
-            <div class="spinner">
-                <div class="content"></div>
-                <div class="mask1"></div>
-                <div class="mask2"></div>
-            </div>
-        `
+        let spinner = document.createElement("div")
+        let content = document.createElement("div")
+        let mask1 = document.createElement("div")
+        let mask2 = document.createElement("div")
+        
+        spinner.setAttribute("class","spinner")
+        content.setAttribute("class","content")
+        mask1.setAttribute("class","mask1")
+        mask2.setAttribute("class","mask2")
+
+        spinner.appendChild(content)
+        spinner.appendChild(mask1)
+        spinner.appendChild(mask2)
+
+        document.querySelector("body").appendChild(spinner)
     }
 
-    show() {
+    static show() {
         document.querySelector(".spinner").classList.add("active")
     }
 
-    hide() {
+    static hide() {
         document.querySelector(".spinner").classList.remove("active")
     }
 }
-const SPINNER = new Spinner()
+new Spinner()
