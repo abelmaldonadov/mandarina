@@ -19,7 +19,7 @@
     --brown: rgb(136, 64, 17);
     /* PASTEL */
     --l-green: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
-    --l-red: linear-gradient(to top, #f85787 0%, #ff8d7e 100%);
+    --l-red: linear-gradient(to top, #fa7474 0%, #ffa295 100%);
     --l-yellow: linear-gradient(to top, #fddb92 0%, #faffd1 100%);
     --l-blue: linear-gradient(to top, #6399f7 0%, #56d1fa 100%);
     --l-orange: linear-gradient(to top, #ffa557 0%, #ffc490 100%);
@@ -32,7 +32,7 @@
     --notify-text: rgb(255, 255, 255);
     --notify-solid: rgb(255, 145, 68);
     /* SHADOW */
-    --shadow: 0 0 10px 10px rgb(245, 245, 245);
+    --shadow: 0 0 10px 10px rgba(0, 0, 0, 0.030);
 
     /* BORDER - LINE */
     --border: none;

@@ -9,6 +9,7 @@
     align-items: center;
     background: rgba(248, 248, 248, 0.5);
     z-index: 999;
+    backdrop-filter: blur(15px);
 }
 .modal>.content{
     border: var(--border);
@@ -26,17 +27,17 @@
     transform: translateY(0%);
 }
 
-.modal>.content>.header{
+.modal>.content>.modal-header{
     padding: var(--p);
 }
-.modal>.content>.body{
+.modal>.content>.modal-body{
     padding: var(--p);
 }
-.modal>.content>.footer{
+.modal>.content>.modal-footer{
     padding: var(--p);
     display: flex;
     justify-content: flex-end;
 }
-.modal>.content>.footer>*{
+.modal>.content>.modal-footer>*{
     margin-left: var(--m);
 }

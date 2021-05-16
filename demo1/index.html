@@ -62,8 +62,9 @@
         <div class="item"><img src="../images/josh-rinard-2kAfdQX1r10-unsplash.jpg" alt="..."></div>
         <div class="item"><img src="../images/dan-gold-N7RiDzfF2iw-unsplash.jpg" alt="..."></div>
     </div>
+
     <button class="drawer-open" data-target="#drawer1"></button>
-    <div class="drawer" id="drawer1">
+    <div class="drawer white" id="drawer1">
         <div class="brand">
             <h3><a href="#">Mandarina</a></h3>
         </div>
@@ -73,12 +74,11 @@
         <a class="item" href="#">Avanzados</a>
         <hr>
         <a class="item" href="#">Otros</a>
-        <div class="footer">
-            <a class="item" href="#">terminos y condiciones</a>
-            <a class="item" href="#">algún enlace raro</a>
-            <a class="item text-red" href="#">Salir</a>
-        </div>
+        <a class="item" href="#">terminos y condiciones</a>
+        <a class="item" href="#">algún enlace raro</a>
+        <a class="item text-red" href="#">Salir</a>
     </div>
+
     <div class="container">
         <h3 class="center m-8">Subtitulo 1</h3>
         <div class="row">
@@ -227,18 +227,18 @@
                        o nisi.
                 </p>
                 <button class="btn l-purple modal-open" data-target="#modal1">ver +</button>
-                <button class="btn l-green" data-title="Este botón no ejecuta ninguna acción">Aceptar lore</button>
+                <button class="btn l-green modal-open" data-target="#modal1">Modal</button>
                 <div class="modal" id="modal1">
-                    <div class="content white">
-                        <div class="header">
+                    <div class="content">
+                        <div class="modal-header">
                             <h5>Modal 1</h5>
                         </div>
-                        <div class="body">
+                        <div class="modal-body">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sunt?</p>
                         </div>
-                        <div class="footer">
-                            <button class="btn red modal-close">Cancelar</button>
-                            <button class="btn green modal-close">Aceptar</button>
+                        <div class="modal-footer">
+                            <button class="btn l-red modal-close">Cancelar</button>
+                            <button class="btn l-green modal-close">Aceptar</button>
                         </div>
                     </div>
                 </div>
