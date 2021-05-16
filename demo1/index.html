@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../icono/Mandarina.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../icono/Mandarina-icono.ico" type="image/x-icon">
     <title>DEMO 1</title>
 
     <link rel="stylesheet" href="../basic/general.css">
     <link rel="stylesheet" href="../basic/grid.css">
     <link rel="stylesheet" href="../basic/space.css">
-    <link rel="stylesheet" href="../basic/color.css">
     <link rel="stylesheet" href="../basic/text.css">
+    <link rel="stylesheet" href="../basic/color.css">
     <link rel="stylesheet" href="../basic/btn.css">
 
     <!-- INSERT STYLE -->
@@ -33,10 +33,10 @@
     <link rel="stylesheet" href="../img/img.css">
     <link rel="stylesheet" href="../footer/footer.css">
 </head>
-<body>
+<body class="dark">
     
     <!--  -->
-    <nav class="navbar white">
+    <nav class="navbar">
         <div class="container">
             <div class="brand">
                 <a href="#"><img src="../icono/Mandarina.svg" alt="..."></a>
@@ -78,18 +78,29 @@
         <a class="item text-red" href="#">Salir</a>
     </div>
 
+    <div class="row">
+        <div class="col">
+            <div class="breadcrumb">
+                <a class="item" href="#">Ajustes</a>
+                <a class="item" href="#">Generales</a>
+                <a class="item" href="#">Pantalla</a>
+                <a class="item" href="#">Brillo</a>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <h3 class="center m-8">Subtitulo 1</h3>
         <div class="row">
             <div class="col md-4">
-                <div class="card" data-animation="auto" data-height="400">
+                <div class="card dark" data-animation="auto" data-height="400">
                 <div class="header">
                     <img src="../images/tom-arrowsmith-7HNftpNvqho-unsplash.jpg" alt="">
                 </div>
                 <div class="body">
                     <h4>Naturaleza</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsum deserunt, temporibus earum erro nisi</p>
-                    <a href="#">Leer mas</a>
+                    <a class="text-white" href="#">Leer mas</a>
                 </div>
             </div>
             </div>
@@ -121,7 +132,7 @@
         <h3 class="center m-8">Subtitulo 2</h3>
         <div class="row">
             <div class="col md-6">
-                <ul class="list">
+                <ul class="list dark">
                     <li class="item" data-notify="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, eligendi.</li>
                     <li class="item" data-notify="13">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, eligendi.</li>
                     <li class="item" data-notify="92">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, eligendi.</li>
@@ -240,7 +251,7 @@
                 <button class="btn l-purple modal-open" data-target="#modal1">ver +</button>
                 <button class="btn l-green modal-open" data-target="#modal1">Modal</button>
                 <div class="modal" id="modal1">
-                    <div class="content white">
+                    <div class="content dark">
                         <div class="modal-header">
                             <h5>Modal 1</h5>
                         </div>
@@ -297,7 +308,6 @@
             <div class="item">
                 <div class="brand">
                     <img src="../icono/Mandarina.svg" class="mandarina">
-                    <!-- <h2>Mandarina</h2> -->
                 </div>
                 <div class="description">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, deserunt? Odit optio 

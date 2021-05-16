@@ -6,7 +6,7 @@
     cursor: pointer;
 }
 .dropdown-open{
-    color: var(--dark);
+    color: var(--gray);
     font-weight: 500;
 }
 .dropdown .dropdown-open:after{

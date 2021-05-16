@@ -34,12 +34,12 @@
 .pagination .item.prev::after{
     content: "\025c0";
     z-index: 2;
-    color: var(--dark);
+    /* color: var(--gray); */
 }
 .pagination .item.next::after{
     content: "\025b6";
     z-index: 2;
-    color: var(--dark);
+    /* color: var(--gray); */
 }
 .pagination .item:hover, .pagination .item:hover::after{
     color: var(--notify-text);

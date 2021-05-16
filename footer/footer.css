@@ -1,6 +1,5 @@
 .footer{
     width: 100%;
-    background: var(--notify-bg);
     margin: var(--margin);
     box-shadow: var(--shadow);
     border-top-left-radius: var(--border-radius);

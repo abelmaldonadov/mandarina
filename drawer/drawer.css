@@ -1,3 +1,7 @@
+.drawer-open{
+    position: absolute;
+    left: -100000px;
+}
 .drawer-open::before{
     content: "\025b6";
     position: fixed;

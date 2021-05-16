@@ -1,11 +1,7 @@
 h1,h2,h3,h4,h5,h6,p,small,blockquote,cite{
     user-select: text;
 }
-h1,h2,h3,h4,h5,h6{
-    color: var(--black);
-}
 p,small,blockquote,cite{
-    color: var(--dark);
     font-size: 1rem;
 }
 h1{ font-size: 4rem; }
@@ -16,7 +12,7 @@ h5{ font-size: 1.5rem; }
 h6{ font-size: 1.25rem; }
 a{
     text-decoration: none;
-    color: var(--dark);
+    color: var(--gray);
     font-weight: 500;
 }
 a:hover, a *:hover{

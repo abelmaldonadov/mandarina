@@ -37,13 +37,13 @@ input[type="checkbox"], input[type="radio"]{
     display: none !important;
 }
 .radio, .check{
-    color: var(--dark);
+    /* color: var(--dark); */
     padding: 5px 15px 5px 33px;
     display: block;
     position: relative;
 }
 .radio:hover, .check:hover{
-    background: var(--light);
+    /* background: var(--light); */
     cursor: pointer;
 }
 .radio::before, .check::before{

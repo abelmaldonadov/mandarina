@@ -13,10 +13,16 @@
 .table tr:hover{
     filter: brightness(97.5%);
 }
-.table th, .table td{
+.table th{
     cursor: pointer;
     display: table-cell;
     padding: var(--p);
+}
+.table td{
+    cursor: pointer;
+    display: table-cell;
+    padding: var(--p);
+    color: var(--dark);
 }
 .table tbody{
     display: table-footer-group;
