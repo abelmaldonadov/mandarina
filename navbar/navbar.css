@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: var(--white);
 }
 .navbar .container{
     display: flex;
@@ -16,6 +17,7 @@
 }
 .navbar .item{
     padding: var(--p);
+    text-align: center;
 }
 .navbar .brand{
     padding: var(--p);
@@ -24,7 +26,41 @@
 .navbar .brand *{
     height: 100%;
 }
+.navbar .menu-open{
+    display: none;
+}
 .navbar .user{
     margin: calc(var(--m)*.5);
     border-radius: 50%;
+}
+
+/* md = 900 -> + */
+@media (max-width : 900px) {
+    .navbar{
+        position: relative;
+    }
+    .navbar .container{
+        width: 100%;
+    }
+    .navbar .menu-open{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: chocolate;
+    }
+    .navbar .menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        visibility: hidden;
+    }
+    .navbar .item{
+        display: block;
+    }
+    .navbar .menu.active{
+        display: block;
+        width: 100%;
+        background: var(--light);
+        visibility: visible;
+    }
 }

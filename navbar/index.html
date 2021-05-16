@@ -15,6 +15,7 @@
 
     <!-- INSERT STYLE -->
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="../dropdown/dropdown.css">
 </head>
 <body>
     
@@ -23,7 +24,8 @@
         <div class="brand">
             <a href="#"><img src="../icono/Mandarina.svg" alt="..."></a>
         </div>
-        <div class="menu">
+        <button class="menu-open" data-target="#menu1"></button>
+        <div class="menu" id="menu1">
             <a class="item" href="#">Element</a>
             <a class="item" href="#">Element</a>
             <a class="item" href="#">Element</a>
@@ -49,7 +51,8 @@
             <div class="brand">
                 <a href="#"><img src="../icono/Mandarina.svg" alt="..."></a>
             </div>
-            <div class="menu">
+            <button class="menu-open" data-target="#menu2"></button>
+            <div class="menu" id="menu2">
                 <a class="item" href="#">Element</a>
                 <a class="item" href="#">Element</a>
                 <a class="item" href="#">Element</a>
@@ -70,6 +73,6 @@
     </nav>
 
     <!-- INSERT SCRIPT -->
-
+    <script src="Navbar.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../icono/Mandarina-icono.ico" type="image/x-icon">
-    <title>DEMO 1</title>
+    <title>Landing</title>
 
     <link rel="stylesheet" href="../basic/general.css">
     <link rel="stylesheet" href="../basic/grid.css">
@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="../img/img.css">
     <link rel="stylesheet" href="../footer/footer.css">
 </head>
-<body class="dark">
+<body>
     
     <!--  -->
     <nav class="navbar">
@@ -41,7 +41,8 @@
             <div class="brand">
                 <a href="#"><img src="../icono/Mandarina.svg" alt="..."></a>
             </div>
-            <div class="menu">
+            <button class="menu-open" data-target="#menu1"></button>
+            <div class="menu" id="menu1">
                 <a class="item" href="#">Element</a>
                 <a class="item" href="#">Element</a>
                 <a class="item" href="#">Element</a>
@@ -67,7 +68,7 @@
     </div>
 
     <button class="drawer-open" data-target="#drawer1"></button>
-    <div class="drawer white" id="drawer1">
+    <div class="drawer" id="drawer1">
         <a class="item" href="#">Dashboard</a>
         <a class="item" href="#">Configuración</a>
         <a class="item" href="#">Usuarios</a>
@@ -78,29 +79,18 @@
         <a class="item text-red" href="#">Salir</a>
     </div>
 
-    <div class="row">
-        <div class="col">
-            <div class="breadcrumb">
-                <a class="item" href="#">Ajustes</a>
-                <a class="item" href="#">Generales</a>
-                <a class="item" href="#">Pantalla</a>
-                <a class="item" href="#">Brillo</a>
-            </div>
-        </div>
-    </div>
-
     <div class="container">
         <h3 class="center m-8">Subtitulo 1</h3>
         <div class="row">
             <div class="col md-4">
-                <div class="card dark" data-animation="auto" data-height="400">
+                <div class="card" data-animation="auto" data-height="400">
                 <div class="header">
                     <img src="../images/tom-arrowsmith-7HNftpNvqho-unsplash.jpg" alt="">
                 </div>
                 <div class="body">
                     <h4>Naturaleza</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsum deserunt, temporibus earum erro nisi</p>
-                    <a class="text-white" href="#">Leer mas</a>
+                    <a href="#">Leer mas</a>
                 </div>
             </div>
             </div>
@@ -132,21 +122,21 @@
         <h3 class="center m-8">Subtitulo 2</h3>
         <div class="row">
             <div class="col md-6">
-                <ul class="list dark">
+                <ul class="list l-yellow">
                     <li class="item" data-notify="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, eligendi.</li>
                     <li class="item" data-notify="13">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, eligendi.</li>
                     <li class="item" data-notify="92">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, eligendi.</li>
                     <li class="item" data-notify="999">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, eligendi.</li>
                 </ul>
-                <div class="alert l-yellow mt-3">
+                <div class="alert l-orange">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum mollitia laudantium id alias ea sint possimus sequi accusamus ullam. 
                     Quis cumque pariatur recusandae est qui beatae alias laudantium et eius?</p>
                 </div>
-                <div class="alert l-purple mt-2">
+                <div class="alert l-purple">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum mollitia laudantium id alias ea sint possimus sequi accusamus ullam. 
                     Quis cumque pariatur recusandae est qui beatae alias laudantium et eius?</p>
                 </div>
-                <div class="alert l-sky mt-2">
+                <div class="alert l-sky">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum mollitia laudantium id alias ea sint possimus sequi accusamus ullam. 
                     Quis cumque pariatur recusandae est qui beatae alias laudantium et eius?</p>
                 </div>
@@ -156,7 +146,9 @@
                     <img src="../images/brittani-burns-fCD__Wr7IPs-unsplash.jpg" alt="...">
                     <div class="caption">
                         <h4>Caption</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, ratione.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, ratione. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, veniam! 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, sed!</p>
                     </div>
                 </a>
             </div>
@@ -344,7 +336,8 @@
     </footer>
 
     <!-- INSERT SCRIPT -->
-    <script src="../alert/alert.js"></script>
+    <script src="../alert/Alert.js"></script>
+    <script src="../navbar/Navbar.js"></script>
     <script src="../drawer/Drawer.js"></script>
     <script src="../modal/Modal.js"></script>
     <script src="../slider/Slider.js"></script>

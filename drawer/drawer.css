@@ -31,6 +31,7 @@
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    background: var(--white);
 }
 .drawer>.item{
     display: block;

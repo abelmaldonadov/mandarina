@@ -45,3 +45,8 @@
 .l-sky,    .l-sky::before,    .l-sky::after{ background: var(--l-sky) !important; }
 .l-pink,   .l-pink::before,   .l-pink::after{ background: var(--l-pink) !important; }
 .l-brown,  .l-brown::before,  .l-brown::after{ background: var(--l-brown) !important; }
+
+/* ICONO */
+body.dark .st2{
+    fill: var(--white) !important;
+}

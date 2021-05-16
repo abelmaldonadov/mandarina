@@ -63,3 +63,26 @@
     visibility: visible;
     transform: translateX(100%);
 }
+
+/* md = 900 -> + */
+@media (max-width : 900px) {
+    .slider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: unset;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .slider .item{
+        width: unset;
+        height: 100%;
+        position: absolute;
+    }
+    .slider .item>*{
+        display: block;
+        width: unset;
+        height: 100%;
+    }
+}

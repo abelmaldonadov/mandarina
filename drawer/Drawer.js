@@ -6,7 +6,7 @@ class Drawer
         document.querySelectorAll(".drawer-open").forEach(btn => {
             if (btn.dataset.target == this.drawer) {
                 btn.addEventListener("click", () => {
-                    document.querySelector(this.drawer).classList.toggle("active")
+                    drawer.classList.toggle("active")
                     btn.classList.toggle("active")
                 })
             }
