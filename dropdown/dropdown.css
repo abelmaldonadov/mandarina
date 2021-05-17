@@ -22,12 +22,16 @@
     overflow: hidden;
     display: none;
     z-index: 1000000;
+    width: 100%;
+    left: 0;
+    top: 40px;
 }
 .dropdown .content .item{
-    min-width: 120px;
+    min-width: 100px;
     display: block;
     padding: var(--p);
     background: var(--white);
+    border-bottom: 1px solid var(--light);
 }
 .dropdown .content .item:hover{
     background: var(--light);
