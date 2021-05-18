@@ -1,5 +1,6 @@
 .footer{
     height: auto;
+    padding: var(--p);
     padding-top: calc(var(--p)*4);
     border-top-left-radius: var(--border-radius);
     box-shadow: var(--shadow);

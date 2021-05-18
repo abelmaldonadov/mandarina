@@ -47,6 +47,10 @@
         width: 40px;
         height: 40px;
         font-size: 30px;
+        cursor: pointer;
+    }
+    .navbar .menu-open *{
+        cursor: pointer;
     }
     .navbar .menu{
         position: absolute;
@@ -64,7 +68,6 @@
         visibility: visible;
     }
     .navbar .dropdown .content{
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        border-radius: 0;
     }
 }
