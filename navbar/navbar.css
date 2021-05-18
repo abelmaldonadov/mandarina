@@ -63,4 +63,8 @@
         background: var(--light);
         visibility: visible;
     }
+    .navbar .dropdown .content{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
 }
