@@ -1,9 +1,8 @@
 .footer{
-    width: 100%;
-    margin: var(--margin);
-    box-shadow: var(--shadow);
+    height: auto;
+    padding-top: calc(var(--p)*4);
     border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
+    box-shadow: var(--shadow);
 }
 .footer .container{
     display: flex;
@@ -12,24 +11,17 @@
     flex-direction: column;
     text-align: center;
 }
-.footer .brand img{
-    width: 50%;
+.footer .title{
+    font-weight: 400;
+    text-transform: capitalize;
 }
-.footer .description{
-    max-width: 350px;
-    margin-top: calc(var(--m)*2);
-    font-weight: 500;
-    font-size: 18px;
+.footer .container p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
 }
-.footer .title-footer{
-    margin-bottom: var(--m);
-    font-weight: 700;
-}
-.footer a{
-    margin-top: var(--m);
-    /* color: var(--gray); */
-    font-weight: 600;
-    transition: all .5s;
+.footer .socials{
+    margin: var(--m);
 }
 .footer .socials a{
     margin: var(--m);
@@ -41,6 +33,5 @@
     text-align: center;
 }
 .copyright p{
-    /* color: var(--gray); */
-    z-index: 100000;
+    text-transform: capitalize;
 }
