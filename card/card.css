@@ -1,12 +1,12 @@
 .card{
     border: var(--border);
     border-radius: var(--border-radius);
+    /* box-shadow: var(--shadow); */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     position: relative;
-    box-shadow: var(--shadow);
     overflow: hidden;
 }
 .card .header{

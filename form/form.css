@@ -2,11 +2,11 @@
     display: block;
     border: var(--border);
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    /* box-shadow: var(--shadow); */
     padding: calc(var(--p)*2);
 }
 /* INPUT TEXT, MAIL, PASS */
-input[type="text"], input[type="mail"], input[type="pass"]{
+input{
     border: var(--border);
     border-radius: var(--border-radius);
     width: 100%;

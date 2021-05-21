@@ -2,22 +2,22 @@
     border: var(--border);
     border-radius: var(--border-radius);
     width: 100%;
-    box-shadow: var(--shadow);
+    /* box-shadow: var(--shadow); */
     padding: var(--p);
 }
-.control>.header{
+.control>.control-header{
     padding: calc(var(--p)*1.5);
     border-bottom: 3px solid var(--light);
     position: relative;
 }
-.control>.body{
+.control>.control-body{
     padding: calc(var(--p)*1.5);
 }
-.control>.footer{
+.control>.control-footer{
     padding: calc(var(--p)*1.5);
     display: flex;
     justify-content: flex-end;
 }
-.control>.footer>.btn{
+.control>.control-footer>.btn{
     margin-left: var(--m);
 }

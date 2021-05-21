@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--white);
+    /* background: var(--white); */
 }
 .navbar .container{
     display: flex;

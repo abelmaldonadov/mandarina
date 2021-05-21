@@ -1,8 +1,5 @@
 .footer{
-    height: auto;
-    padding: var(--p);
     padding-top: calc(var(--p)*4);
-    border-top-left-radius: var(--border-radius);
     box-shadow: var(--shadow);
 }
 .footer .container{
@@ -11,10 +8,6 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-}
-.footer .title{
-    font-weight: 400;
-    text-transform: capitalize;
 }
 .footer .container p{
     max-width: 500px;
@@ -33,6 +26,6 @@
     padding: calc(var(--p)*2);
     text-align: center;
 }
-.copyright p{
+.copyright *{
     text-transform: capitalize;
 }

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: var(--shadow);
+    /* box-shadow: var(--shadow); */
 }
 .pagination .item{
     padding: calc(var(--p)/2);

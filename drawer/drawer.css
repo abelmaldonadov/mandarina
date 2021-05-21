@@ -32,11 +32,17 @@
     flex-wrap: wrap;
     align-content: center;
     background: var(--white);
+    overflow: hidden;
 }
 .drawer>.item{
+    transition: all .2s;
     display: block;
     width: 100%;
     padding: var(--p);
+}
+.drawer>.item:hover{
+    transition: all .2s;
+    transform: scale(1.2) translateX(20px);
 }
 
 /* ACTIVATE DRAWER */

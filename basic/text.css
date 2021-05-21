@@ -1,7 +1,16 @@
+*{
+    font-weight: 300;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+}
 h1,h2,h3,h4,h5,h6,p,small,blockquote,cite{
     user-select: text;
 }
-p,small,blockquote,cite{
+small{
+    font-size: .75rem;
+}
+p,blockquote,cite{
     font-size: 1rem;
 }
 h1{ font-size: 4rem; }
@@ -26,8 +35,8 @@ a:hover, a *:hover{
 .text-center{ text-align: center; }
 
 /* OTHERS */
-.b{ font-weight: bolder; }
-.i{ font-style: italic; }
+b,.b{ font-weight: bolder; }
+i,.i{ font-style: italic; }
 .important{ background: var(--yellow); }
 .underline{ text-decoration: underline; }
 .overline{ text-decoration: overline; }

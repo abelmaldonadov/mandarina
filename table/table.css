@@ -1,7 +1,7 @@
 .table{
     display: table;
     width: 100%;
-    box-shadow: var(--shadow);
+    /* box-shadow: var(--shadow); */
     border: var(--border);
     border-radius: var(--border-radius);
     border-spacing: 0;

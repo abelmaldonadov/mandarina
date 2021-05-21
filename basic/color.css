@@ -47,6 +47,6 @@
 .l-brown,  .l-brown::before,  .l-brown::after{ background: var(--l-brown) !important; }
 
 /* ICONO */
-body.dark .st2{
-    fill: var(--white) !important;
+body.dark p{
+    color: var(--white);
 }
