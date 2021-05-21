@@ -3,6 +3,7 @@
     position: relative;
     text-align: center;
     padding: calc(var(--p)*5);
+    overflow: hidden;
 }
 .article::before{
     content: "\0201f";

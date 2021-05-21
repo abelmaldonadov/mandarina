@@ -4,7 +4,6 @@
     position: relative;
     border: var(--border);
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
     overflow: hidden;
 }
 .img *{

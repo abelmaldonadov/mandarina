@@ -4,11 +4,12 @@ class Slider
         this.slider = "#"+slider.id
         this.animation = slider.dataset.animation // AUTO; OPACITY; SLIDE; RADIANCE
         this.duration = slider.dataset.duration * 1000
-        this.height = slider.dataset.height + "px"
+        this.minHeight = slider.dataset.minHeight + "px"
+        this.maxHeight = slider.dataset.maxHeight + "px"
         this.numFrames = slider.children.length
 
         // PRESETS
-        slider.style.height = this.height
+        slider.setAttribute("style","--minHeight:"+this.minHeight+"; --maxHeight:"+this.maxHeight+";")
         slider.children[this.numFrames-1].classList.add("prev")
         slider.children[0].classList.add("active")
         slider.children[1].classList.add("next")

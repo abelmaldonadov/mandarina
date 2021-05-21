@@ -1,31 +1,13 @@
 .footer{
     padding-top: calc(var(--p)*4);
-    box-shadow: var(--shadow);
-}
-.footer .container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
-.footer .container p{
-    max-width: 500px;
-    margin: 10px auto;
+.footer *{
+    max-width: 60%;
     line-height: 28px;
-}
-.footer .socials{
     margin: var(--m);
-}
-.footer .socials a{
-    margin: var(--m);
-}
-
-
-.copyright{
-    padding: calc(var(--p)*2);
-    text-align: center;
-}
-.copyright *{
-    text-transform: capitalize;
 }

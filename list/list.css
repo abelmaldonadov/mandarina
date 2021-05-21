@@ -1,7 +1,6 @@
 .list{
     border: var(--border);
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
     display: block;
     width: 100%;
 }

@@ -2,7 +2,6 @@
     border: var(--border);
     border-radius: var(--border-radius);
     width: 100%;
-    /* box-shadow: var(--shadow); */
     padding: var(--p);
 }
 .control>.control-header{
