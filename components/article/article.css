@@ -8,7 +8,7 @@
 .article::before{
     content: "\0201f";
     font-family: sans-serif;
-    font-size: 15rem;
+    font-size: 12.5rem;
     position: absolute;
     top: -30px;
     left: -5px;
@@ -16,7 +16,7 @@
 .article::after{
     content: "\0201e";
     font-family: sans-serif;
-    font-size: 15rem;
+    font-size: 12.5rem;
     position: absolute;
     bottom: -20px;
     right: -5px;

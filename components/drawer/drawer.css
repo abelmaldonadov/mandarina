@@ -32,13 +32,15 @@
     flex-wrap: wrap;
     align-content: center;
     background: var(--white);
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .drawer>.item{
     transition: all .2s;
     display: block;
     width: 100%;
     padding: var(--p);
+    height: 30px;
 }
 .drawer>.item:hover{
     transition: all .2s;

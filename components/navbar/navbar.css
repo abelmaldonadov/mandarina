@@ -47,10 +47,12 @@
         width: 40px;
         height: 40px;
         font-size: 30px;
+        border: none;
+        background: transparent;
         cursor: pointer;
     }
-    .navbar .menu-open *{
-        cursor: pointer;
+    .navbar .menu-open::before{
+        content: "\02261";
     }
     .navbar .menu{
         position: absolute;
