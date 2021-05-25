@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/brand/gajo.ico" type="image/x-icon">
     <title>Thanks</title>
 
     <link rel="stylesheet" href="../components/basic/general.css">
@@ -12,43 +13,159 @@
     <link rel="stylesheet" href="../components/basic/color.css">
     <link rel="stylesheet" href="../components/basic/text.css">
     <link rel="stylesheet" href="../components/basic/btn.css">
+
+    <!-- INSERT STYLE -->
+    <link rel="stylesheet" href="../components/alert/alert.css">
+    <link rel="stylesheet" href="../components/breadcrumb/breadcrumb.css">
+    <link rel="stylesheet" href="../components/card/card.css">
+    <link rel="stylesheet" href="../components/control/control.css">
+    <link rel="stylesheet" href="../components/drawer/drawer.css">
+    <link rel="stylesheet" href="../components/dropdown/dropdown.css">
+    <link rel="stylesheet" href="../components/form/form.css">
+    <link rel="stylesheet" href="../components/list/list.css">
+    <link rel="stylesheet" href="../components/modal/modal.css">
+    <link rel="stylesheet" href="../components/navbar/navbar.css">
+    <link rel="stylesheet" href="../components/pagination/pagination.css">
+    <link rel="stylesheet" href="../components/slider/slider.css">
+    <link rel="stylesheet" href="../components/spinner/spinner.css">
+    <link rel="stylesheet" href="../components/table/table.css">
+    <link rel="stylesheet" href="../components/title/title.css">
+    <link rel="stylesheet" href="../components/img/img.css">
+    <link rel="stylesheet" href="../components/footer/footer.css">
+    <link rel="stylesheet" href="../components/article/article.css">
 </head>
 <body>
-    <div class="container">
 
-        <div class="row mt-6 mb-6">
+    <!-- DRAWER -->
+    <button class="drawer-open" data-target="#drawer1"></button>
+    <div class="drawer" id="drawer1">
+        <div class="brand">
+            <h3><a href="/">Mandarina</a></h3>
+        </div>
+        <a class="item" href="#">Comenzar</a>
+
+        <a class="item" href="#">Alert</a>
+        <a class="item" href="#">Article</a>
+        <a class="item" href="#">Breadcrumb</a>
+        <a class="item" href="#">Card</a>
+        <a class="item" href="#">Control</a>
+        <a class="item" href="#">Drawer</a>
+        <a class="item" href="#">Dropdown</a>
+        <a class="item" href="#">Footer</a>
+        <a class="item" href="#">Form</a>
+        <a class="item" href="#">Img</a>
+        <a class="item" href="#">List</a>
+        <a class="item" href="#">Modal</a>
+        <a class="item" href="#">Navbar</a>
+        <a class="item" href="#">Pagination</a>
+        <a class="item" href="#">Slider</a>
+        <a class="item" href="#">Spinner</a>
+        <a class="item" href="#">Table</a>
+        <a class="item" href="#">Title</a>
+    </div>
+
+
+    <main class="container">
+
+        <!-- HEADER -->
+        <div class="row my-6 flex-evenly">
             <h3>Say thanks 🙌</h3>
         </div>
-        
-        <div class="row mb-4">
-            <img src="../images/third/cars/brittani-burns-fCD__Wr7IPs-unsplash.jpg" alt="..." width="100px">
-            Photo by <a href="https://unsplash.com/@brittaniburns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brittani Burns</a> 
-            on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        </div>
 
-        <div class="row mb-4">
-            <img src="../images/third/cars/josh-rinard-2kAfdQX1r10-unsplash.jpg" alt="..." width="100px">
-            Photo by <a href="https://unsplash.com/@joshrinard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Josh Rinard</a> 
-            on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        </div>
+        <!-- TABLE -->
+        <table class="table shadow">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Thumb</th>
+                    <th>Photo by</th>
+                    <th>On</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr>
+                    <th>1</th>
+                    <td><img src="../images/third/cars/brittani-burns-fCD__Wr7IPs-unsplash.jpg" alt="..." width="100px"></td>
+                    <td><a href="https://unsplash.com/@brittaniburns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brittani Burns</a></td>
+                    <td><a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td><img src="../images/third/cars/josh-rinard-2kAfdQX1r10-unsplash.jpg" alt="..." width="100px"></td>
+                    <td><a href="https://unsplash.com/@joshrinard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Josh Rinard</a></td>
+                    <td><a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td><img src="../images/third/cars/dan-gold-N7RiDzfF2iw-unsplash.jpg" alt="..." width="100px"></td>
+                    <td><a href="https://unsplash.com/@danielcgold?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dan Gold</a></td>
+                    <td><a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td><img src="../images/third/cars/tom-arrowsmith-7HNftpNvqho-unsplash.jpg" alt="..." width="100px"></td>
+                    <td><a href="https://unsplash.com/@tom_a?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tom Arrowsmith</a></td>
+                    <td><a href="https://unsplash.com/s/photos/bocho?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td><img src="../images/third/cars/elena-kuchko-R1xsM8OBdjE-unsplash.jpg" alt="..." width="100px"></td>
+                    <td><a href="https://unsplash.com/@elena_kuchko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elena Kuchko</a></td>
+                    <td><a href="https://unsplash.com/s/photos/bocho?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td><img src="../images/third/mountains/marek-piwnicki-c7kNZWxyYL4-unsplash.jpg" alt="..." width="100px"></td>
+                    <td><a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marek Piwnicki</a></td>
+                    <td><a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></td>
+                </tr>
+                <tr>
+                    <th>7</th>
+                    <td><img src="../images/third/pizza/paula-berto-WLbD34w3kRQ-unsplash.jpg" alt="..." width="100px"></td>
+                    <td><a href="https://unsplash.com/@paulaberto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Paula Berto</a></td>
+                    <td><a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></td>
+                </tr>
+                <tr>
+                    <th>8</th>
+                    <td><img src="../images/" alt="..." width="100px"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
 
-        <div class="row mb-4">
-            <img src="../images/third/cars/dan-gold-N7RiDzfF2iw-unsplash.jpg" alt="..." width="100px">
-            Photo by <a href="https://unsplash.com/@danielcgold?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dan Gold</a>
-            on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        </div>
+    </main>
 
-        <div class="row mb-4">
-            <img src="../images/third/cars/tom-arrowsmith-7HNftpNvqho-unsplash.jpg" alt="..." width="100px">
-            Photo by <a href="https://unsplash.com/@tom_a?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tom Arrowsmith</a> 
-            on <a href="https://unsplash.com/s/photos/bocho?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    <!-- FOOTER -->
+    <footer class="footer light mt-9">
+        <div class="container">
+            <h3 class="item">Mandarina</h3>
+            <p class="item text-9"><a href="#">Mandarina CSS</a> fué desarrollado para emprendedores del desarrollo web que quieren 
+                introducirse en este gratificante mundo y para los más experimentados, que ya lo conocen, pero buscan una forma sencilla, 
+                rápida y personalizable de estilizar sus aplicacones web. Puedes usar <a href="#">Mandarina CSS</a> con fines educativos 
+                o comerciales ya que está libre de derechos. 
+            </p>
+            <p class="item text-11">
+                "Muchas gracias a todas las comunidades de software libre por ser los heroes detrás de todo proyecto que busca transformar el mundo". 🧡
+            </p>
+            <div class="item">
+                <a href="#" class="mx-1">Facebook</a>
+                <a href="#" class="mx-1">Intagram</a>
+                <a href="#" class="mx-1">Twiter</a>
+                <a href="#" class="mx-1">Youtube</a>
+                <a href="#" class="mx-1">Linkedin</a>
+            </div>
         </div>
+    </footer>
 
-        <div class="row mb-4">
-            <img src="../images/third/cars/elena-kuchko-R1xsM8OBdjE-unsplash.jpg" alt="..." width="100px">
-            Photo by <a href="https://unsplash.com/@elena_kuchko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Elena Kuchko</a> 
-            on <a href="https://unsplash.com/s/photos/bocho?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        </div>
-    </div>
+
+    <!-- INSERT SCRIPT -->
+    <script src="../components/alert/Alert.js"></script>
+    <script src="../components/navbar/Navbar.js"></script>
+    <script src="../components/drawer/Drawer.js"></script>
+    <script src="../components/modal/Modal.js"></script>
+    <script src="../components/slider/Slider.js"></script>
+    <script src="../components/card/Card.js"></script>
+    <script src="../components/spinner/Spinner.js"></script>
 </body>
 </html>

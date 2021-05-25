@@ -1,13 +1,12 @@
 .footer{
     padding-top: calc(var(--p)*4);
+    padding-bottom: calc(var(--p)*4);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
-.footer *{
-    max-width: 60%;
-    line-height: 28px;
-    margin: var(--m);
+.footer .item{
+    margin-top: calc(var(--m)*2);
 }

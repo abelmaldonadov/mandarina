@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing</title>
+    <link rel="shortcut icon" href="../images/brand/gajo.ico" type="image/x-icon">
+    <title>Landing - Demo Mandarina CSS</title>
 
     <link rel="stylesheet" href="../components/basic/general.css">
     <link rel="stylesheet" href="../components/basic/grid.css">
@@ -33,12 +34,50 @@
     <link rel="stylesheet" href="../components/footer/footer.css">
     <link rel="stylesheet" href="../components/article/article.css">
 </head>
-<body>
+<body background="../images/third/pizza/paula-berto-WLbD34w3kRQ-unsplash.jpg" class="h-100vh bg-cover">
     
-    <!--  -->
+    <main class="row flex-right">
+        <form class="form white col sm-8 md-6 lg-5 xl-4 no-radius py-9 px-6 min-h-100vh shadow">
+            <h1 class="center">🍕</h1>
+            <h2 class="center mb-1 text-gray"><b>Lolobelo</b> Pizza</h2>
+            <p class="center mb-6 text-orange text-18">¡La primera va por nuestra cuenta!</p>
+            <input type="text" id="text" placeholder="Ingrese su nombre">
+            <input type="number" id="age" placeholder="Ingrese su edad" min="14">
+            <input type="text" id="city" placeholder="Ingrese su ciudad">
+            <p class="p-1">Seleccione sus ingredientes preferidos:</p>
+            <div>
+                <input type="checkbox" id="check">
+                <label class="check" for="check">Jamón inglés</label>
+                <input type="checkbox" id="check-1">
+                <label class="check" for="check-1">Pepperoni</label>
+                <input type="checkbox" id="check-2">
+                <label class="check" for="check-2">Salchicha italiana</label>
+                <input type="checkbox" id="check-3">
+                <label class="check" for="check-3">Doble queso</label>
+                <input type="checkbox" id="check-4">
+                <label class="check" for="check-5">Champiñones</label>
+                <input type="checkbox" id="check-6">
+                <label class="check" for="check-6">Tocino ahumado</label>
+            </div>
+            <div class="mt-1">
+                <input class="btn l-orange" value="Enviar">
+            </div>
+            <p class="p-1 text-7">*Al hacer click en el botón enviar confirma haber leido y comprendido los <a href="#">terminos y condiciones</a>. 
+            Lolobelo pizza se reserva el derecho de manejar sus datos personales para los fines pertinentes del negocio.</p>
+        </form>
+    </main>
+
+
     
 
     <!-- INSERT SCRIPT -->
+    <script src="../components/alert/Alert.js"></script>
+    <script src="../components/navbar/Navbar.js"></script>
+    <script src="../components/drawer/Drawer.js"></script>
+    <script src="../components/modal/Modal.js"></script>
+    <script src="../components/slider/Slider.js"></script>
+    <script src="../components/card/Card.js"></script>
+    <script src="../components/spinner/Spinner.js"></script>
     
 
 </body>

@@ -4,7 +4,6 @@
 .row{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
     align-items: stretch;
     flex-wrap: wrap;
 }
@@ -63,7 +62,7 @@
     .md-2{ display: block; width: calc(100%*2/12); }
     .md-1{ display: block; width: calc(100%*1/12); }
     .md-0{ display: none; }
-    .container{ width: 95%; }
+    .container{ width: 90%; }
 }
 /* lg = 1100 -> + */
 @media (min-width : 1100px) {
@@ -80,7 +79,7 @@
     .lg-2{ display: block; width: calc(100%*2/12); }
     .lg-1{ display: block; width: calc(100%*1/12); }
     .lg-0{ display: none; }
-    .container{ width: 90%; }
+    .container{ width: 80%; }
 }
 /* xl = 1300 -> + */
 @media (min-width : 1300px) {
@@ -97,5 +96,5 @@
     .xl-2{ display: block; width: calc(100%*2/12); }
     .xl-1{ display: block; width: calc(100%*1/12); }
     .xl-0{ display: none; }
-    .container{ width: 85%; }
+    .container{ width: var(--container); }
 }

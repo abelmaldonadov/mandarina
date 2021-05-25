@@ -6,6 +6,9 @@
     border-radius: var(--border-radius);
     overflow: hidden;
 }
+.img:hover, .img *:hover{
+    filter: none;
+}
 .img *{
     width: 100%;
 }
