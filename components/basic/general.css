@@ -79,6 +79,7 @@ html,body{
 .opacity-9{ opacity: .9 !important; }
 .opacity-10{ opacity: 10 !important; }
 .overflow-h{ overflow: hidden !important; }
+.overflow-a{ overflow: auto !important; }
 .shadow{ box-shadow: var(--shadow) !important; }
 .no-shadow{ box-shadow: none !important; }
 .border{ border: var(--border) !important; }
