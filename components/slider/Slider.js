@@ -8,6 +8,11 @@ class Slider
         this.minHeight = slider.dataset.height/2 + "px"
         this.numFrames = slider.children.length
 
+        // INSERT IMAGES
+        document.querySelectorAll(this.slider+" .item").forEach(item => {
+            item.setAttribute("style", "background-image: url('"+item.dataset.frame+"');")
+        })
+
         // PRESETS
         slider.setAttribute("style","--minHeight:"+this.minHeight+"; --maxHeight:"+this.maxHeight+";")
         slider.children[this.numFrames-1].classList.add("prev")

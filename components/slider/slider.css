@@ -8,11 +8,11 @@
 }
 .slider .item{
     width: 100%;
-    position: absolute;
-}
-.slider .item>*{
-    width: 100%;
     height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 [data-animation="auto"].slider .item{
