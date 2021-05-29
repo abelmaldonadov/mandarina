@@ -1,0 +1,24 @@
+.tool{
+    position: fixed;
+    top: 25%;
+    border: var(--border);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    z-index: 999999;
+}
+.tool .item{
+    padding: var(--p);
+    text-align: center;
+}
+
+.tool.rigth{
+    right: 0;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.tool.left{
+    left: 0;
+}
