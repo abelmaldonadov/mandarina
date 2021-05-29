@@ -4,6 +4,7 @@
 }
 .dropdown *{
     cursor: pointer;
+    filter: none !important;
 }
 .dropdown-open{
     color: var(--gray);

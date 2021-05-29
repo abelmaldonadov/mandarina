@@ -21,7 +21,7 @@
     z-index: 10;
 }
 .tab .tab-header .tab-open.active{
-    background: var(--notify-solid)!important;
+    background: var(--notify)!important;
     border-bottom: 0;
 }
 

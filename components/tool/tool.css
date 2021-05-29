@@ -1,4 +1,4 @@
-.tool{
+.tool, .tool.left{
     position: fixed;
     top: 25%;
     border: var(--border);
@@ -7,11 +7,6 @@
     box-shadow: var(--shadow);
     z-index: 999999;
 }
-.tool .item{
-    padding: var(--p);
-    text-align: center;
-}
-
 .tool.rigth{
     right: 0;
     border-top-left-radius: var(--border-radius);
@@ -19,6 +14,15 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-.tool.left{
-    left: 0;
+.tool .item{
+    display: block;
+    padding: calc(var(--p)*1.5);
+    text-align: center;
+    filter: none;
+    cursor: pointer;
+    transition: all .25s;
+}
+.tool .item:hover{
+    transform: scale(1.25);
+    transition: all .25s;
 }
