@@ -4,17 +4,13 @@ class Slider
         this.slider = "#"+slider.id
         this.animation = slider.dataset.animation // AUTO; OPACITY; SLIDE; RADIANCE
         this.duration = slider.dataset.duration * 1000
-        this.maxHeight = slider.dataset.height + "px"
-        this.minHeight = slider.dataset.height/2 + "px"
+        this.minHeight = slider.dataset.minHeight
         this.numFrames = slider.children.length
 
-        // INSERT IMAGES
-        document.querySelectorAll(this.slider+" .item").forEach(item => {
-            item.setAttribute("style", "background-image: url('"+item.dataset.frame+"');")
-        })
-
         // PRESETS
-        slider.setAttribute("style","--minHeight:"+this.minHeight+"; --maxHeight:"+this.maxHeight+";")
+        if (screen.width < 900) {
+            slider.style.height = this.minHeight
+        }
         slider.children[this.numFrames-1].classList.add("prev")
         slider.children[0].classList.add("active")
         slider.children[1].classList.add("next")

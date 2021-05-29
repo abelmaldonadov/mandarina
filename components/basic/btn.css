@@ -7,8 +7,10 @@
     cursor: pointer;
     margin-top: calc(var(--m)*.25);
     margin-bottom: calc(var(--m)*.25);
-    min-width: 90px;
+    min-width: 90px !important;
     text-align: center;
+    display: inline-block;
+    font-weight: normal;
 }
 .btn-sm{
     padding: calc(var(--p)*.75);

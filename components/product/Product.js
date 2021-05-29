@@ -1,4 +1,4 @@
-class ProductCard
+class Product
 {
     constructor(product) {
         this.height = product.dataset.height + "px"
@@ -8,5 +8,5 @@ class ProductCard
     }
 }
 document.querySelectorAll(".product_card").forEach(product => {
-    new ProductCard(product)
+    new Product(product)
 })

@@ -10,8 +10,10 @@
     z-index: 2;
     position: relative;
     text-align: center;
+    cursor: pointer;
+    filter: none !important;
 }
-
+/* CIRCLE */
 .pagination .item::before{
     content: "";
     position: absolute;
@@ -20,7 +22,7 @@
     width: 0px;
     transform: translate(-50%, -50%);
     height: 0px;
-    background: var(--notify-bg);
+    background: var(--notify);
     border-radius: 50%;
     transition: all .5s;
     z-index: -1;
@@ -29,7 +31,7 @@
     width: 40px;
     height: 40px;
 }
-
+/* PREV - NEXT */
 .pagination .item.prev::after{
     content: "\025c0";
     z-index: 2;
@@ -39,5 +41,5 @@
     z-index: 2;
 }
 .pagination .item:hover, .pagination .item:hover::after{
-    color: var(--notify-text);
+    color: var(--text-notify);
 }

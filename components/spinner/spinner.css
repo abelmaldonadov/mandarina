@@ -15,7 +15,7 @@
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    border-top: 7.5px solid var(--notify-solid);
+    border-top: 7.5px solid var(--notify);
     border-bottom: 7.5px solid transparent;
     border-left: 7.5px solid transparent;
     border-right: 7.5px solid transparent;
@@ -25,7 +25,7 @@
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    border-top: 7.5px solid var(--notify-solid);
+    border-top: 7.5px solid var(--notify);
     border-bottom: 7.5px solid transparent;
     border-left: 7.5px solid transparent;
     border-right: 7.5px solid transparent;

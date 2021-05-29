@@ -16,6 +16,7 @@
     cursor: pointer;
     display: table-cell;
     padding: var(--p);
+    font-weight: 500;
 }
 .table td{
     cursor: pointer;

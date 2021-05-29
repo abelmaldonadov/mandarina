@@ -28,13 +28,13 @@
 }
 
 .modal>.content>.modal-header{
-    padding: var(--p);
+    padding: calc(var(--p)*2);
 }
 .modal>.content>.modal-body{
-    padding: var(--p);
+    padding: calc(var(--p)*2);
 }
 .modal>.content>.modal-footer{
-    padding: var(--p);
+    padding: calc(var(--p)*2);
     display: flex;
     justify-content: flex-end;
 }

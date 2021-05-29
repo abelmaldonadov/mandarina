@@ -15,14 +15,13 @@
     top: calc(50% - .75rem);
     right: calc(var(--p)*2);
     padding: calc(var(--p)/2);
-    background: var(--notify-bg);
-    color: var(--notify-text);
+    background: var(--l-notify);
+    color: var(--text-notify);
     border-radius: var(--border-radius);
 }
 ul.list .item::marker, ol.list .item::marker{
     content: none;
 }
-
 ol.list{
     counter-reset: list;
 }

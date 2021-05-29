@@ -1,4 +1,5 @@
 .drawer-open{
+    /* NO TOCAR */
     position: absolute;
     left: -100000px;
 }
@@ -9,12 +10,12 @@
     left: 0;
     display: block;
     cursor: pointer;
-    color: var(--notify-text);
+    color: var(--text-notify);
     padding-right: calc(var(--p)*1.5);
     padding-left: calc(var(--p)*1.5);
     padding-top: calc(var(--p)*3);
     padding-bottom: calc(var(--p)*3);
-    background: var(--notify-bg);
+    background: var(--l-notify);
     z-index: 2;
     border-radius: 0 50% 50% 0;
     box-shadow: var(--shadow);

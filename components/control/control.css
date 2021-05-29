@@ -5,15 +5,15 @@
     padding: var(--p);
 }
 .control>.control-header{
-    padding: calc(var(--p)*1.5);
+    padding: calc(var(--p)*2);
     border-bottom: 3px solid var(--light);
     position: relative;
 }
 .control>.control-body{
-    padding: calc(var(--p)*1.5);
+    padding: calc(var(--p)*2);
 }
 .control>.control-footer{
-    padding: calc(var(--p)*1.5);
+    padding: calc(var(--p)*2);
     display: flex;
     justify-content: flex-end;
 }

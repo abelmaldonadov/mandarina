@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: var(--maxHeight);
     position: relative;
     overflow: hidden;
 }
@@ -63,11 +62,4 @@
     z-index: 3;
     visibility: visible;
     transform: translateX(100%);
-}
-
-/* md = - => 900 */
-@media (max-width : 900px) {
-    .slider{
-        height: var(--minHeight);
-    }
 }

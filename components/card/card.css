@@ -8,7 +8,7 @@
     position: relative;
     overflow: hidden;
 }
-.card .header{
+.card .card-header{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,36 +17,31 @@
     width: 100%;
     height: 50%;
     overflow: hidden;
+    transition: all .5s;
 }
-.card .header *{
+.card .card-header *{
     width: 100%;
 }
-.card .body{
+.card .card-body{
     display: block;
     width: 100%;
     height: 50%;
     padding: calc(var(--p)*2);
     position: absolute;
     top: 50%;
+    transition: all .5s;
 }
-.card .body *{
+.card .card-body *{
     display: block;
     text-align: center;
     margin: auto;
 }
-
-[data-animation="auto"].card .header{
-    transition: all .5s;
-}
-[data-animation="auto"].card .header:hover{
+.card .card-header:hover{
     transition: all .5s;
     width: 200%;
     height: 100%;
 }
-[data-animation="auto"].card .body{
-    transition: all .5s;
-}
-[data-animation="auto"].card .header:hover + .body{
+.card .card-header:hover + .card-body{
     transition: all .5s;
     top: 100%;
 }

@@ -39,13 +39,13 @@
     border: none;
 }
 .breadcrumb .item:last-child{
-    background: var(--notify-solid);
-    color: var(--notify-text);
+    background: var(--notify);
+    color: var(--text-notify);
 }
 .breadcrumb .item:last-child:before{
-    border-top: 20px solid var(--notify-solid);
-    border-bottom: 20px solid var(--notify-solid);
+    border-top: 20px solid var(--notify);
+    border-bottom: 20px solid var(--notify);
 }
 .breadcrumb .item:last-child::after{
-    border-left: 20px solid var(--notify-solid);
+    border-left: 20px solid var(--notify);
 }
