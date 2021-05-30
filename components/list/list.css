@@ -6,18 +6,6 @@
 }
 .list .item{
     padding: calc(var(--p)*2);
-    position: relative;
-}
-.list .item::after{
-    content: attr(data-notify);
-    font-size: .75rem;
-    position: absolute;
-    top: calc(50% - .75rem);
-    right: calc(var(--p)*2);
-    padding: calc(var(--p)/2);
-    background: var(--l-notify);
-    color: var(--text-notify);
-    border-radius: var(--border-radius);
 }
 ul.list .item::marker, ol.list .item::marker{
     content: none;

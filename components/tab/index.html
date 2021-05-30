@@ -8,6 +8,7 @@
     <title>Tab</title>
 
     <link rel="stylesheet" href="../basic/general.css">
+    <link rel="stylesheet" href="../basic/flex.css">
     <link rel="stylesheet" href="../basic/grid.css">
     <link rel="stylesheet" href="../basic/space.css">
     <link rel="stylesheet" href="../basic/color.css">
@@ -16,81 +17,108 @@
     <link rel="stylesheet" href="../basic/btn.css">
 
     <!-- INSERT STYLE -->
+    <link rel="stylesheet" href="../control/control.css">
+    <link rel="stylesheet" href="../table/table.css">
     <link rel="stylesheet" href="tab.css">
 
 </head>
 <body>
     
     <!-- TAB -->
-    <div class="container">
-        <div class="p-6"></div>
+    <div class="container my-9">
 
-        <div class="tab">
+        <div class="tab shadow" id="tab">
             <div class="tab-header">
-                <div class="tab-open active" data-target="#tab-content-1">Tab 1</div>
-                <div class="tab-open" data-target="#tab-content-2">Tab 2</div>
-                <div class="tab-open" data-target="#tab-content-3">Tab 3</div>
+                <div class="tab-open active" data-target="#tab-1">Control in Tab</div>
+                <div class="tab-open" data-target="#tab-2">Table in Tab</div>
+                <div class="tab-open" data-target="#tab-3">Grid in Tab</div>
             </div>
             <div class="tab-body">
-                <div class="tab-content active" id="tab-content-1">
-                    <h1>Titulo 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab est autem eius sequi cum, quas assumenda necessitatibus explicabo reiciendis eveniet magnam recusandae eligendi repellat porro nulla impedit vitae numquam dolores!</p>
+                <div class="tab-content active" id="tab-1">
+                    <div class="control">
+                        <div class="control-header">
+                            <h5>Control in Tab</h5>
+                        </div>
+                        <div class="control-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, recusandae unde necessitatibus rem labore earum ratione quod modi doloremque. 
+                            Id ut exercitationem doloribus maxime expedita explicabo necessitatibus cum minima sit?
+                        </div>
+                        <div class="control-footer">
+                            <button class="btn l-red">Cancelar</button>
+                            <button class="btn l-green">Aceptar</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-content" id="tab-content-2">
-                    <h1>Titulo 2</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab est autem eius sequi cum, quas assumenda necessitatibus explicabo reiciendis eveniet magnam recusandae eligendi repellat porro nulla impedit vitae numquam dolores!</p>
+                <div class="tab-content p-3" id="tab-2">
+                    <h3 class="p-3">Table on Clients</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Edad</th>
+                                <th>User</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td>Abel</td>
+                                <td>Maldonado</td>
+                                <td>23</td>
+                                <td>@abel</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>Lolo</td>
+                                <td></td>
+                                <td>15</td>
+                                <td>@lolo</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Diego</td>
+                                <td>Caldoreon</td>
+                                <td>16</td>
+                                <td>@diegoss</td>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>Abel</td>
+                                <td>Maldonado</td>
+                                <td>23</td>
+                                <td>@abel</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>Lolo</td>
+                                <td></td>
+                                <td>15</td>
+                                <td>@lolo</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Diego</td>
+                                <td>Caldoreon</td>
+                                <td>16</td>
+                                <td>@diegoss</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-right text-8 p-3">Elaboración propia 2021</p>
                 </div>
-                <div class="tab-content" id="tab-content-3">
-                    <h1>Titulo 3</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab est autem eius sequi cum, quas assumenda necessitatibus explicabo reiciendis eveniet magnam recusandae eligendi repellat porro nulla impedit vitae numquam dolores!</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="p-6"></div>
-
-        <div class="tab">
-            <div class="tab-header">
-                <div class="tab-open" data-target="#tab-content-1">Tab 1</div>
-                <div class="tab-open active" data-target="#tab-content-2">Tab 2</div>
-                <div class="tab-open" data-target="#tab-content-3">Tab 3</div>
-            </div>
-            <div class="tab-body">
-                <div class="tab-content" id="tab-content-1">
-                    <h1>Titulo 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab est autem eius sequi cum, quas assumenda necessitatibus explicabo reiciendis eveniet magnam recusandae eligendi repellat porro nulla impedit vitae numquam dolores!</p>
-                </div>
-                <div class="tab-content active" id="tab-content-2">
-                    <h1>Titulo 2</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab est autem eius sequi cum, quas assumenda necessitatibus explicabo reiciendis eveniet magnam recusandae eligendi repellat porro nulla impedit vitae numquam dolores!</p>
-                </div>
-                <div class="tab-content" id="tab-content-3">
-                    <h1>Titulo 3</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab est autem eius sequi cum, quas assumenda necessitatibus explicabo reiciendis eveniet magnam recusandae eligendi repellat porro nulla impedit vitae numquam dolores!</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="p-6"></div>
-
-        <div class="tab">
-            <div class="tab-header">
-                <div class="tab-open" data-target="#tab-content-1">Tab 1</div>
-                <div class="tab-open" data-target="#tab-content-2">Tab 2</div>
-                <div class="tab-open active" data-target="#tab-content-3">Tab 3</div>
-            </div>
-            <div class="tab-body">
-                <div class="tab-content" id="tab-content-1">
-                    <h1>Titulo 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab est autem eius sequi cum, quas assumenda necessitatibus explicabo reiciendis eveniet magnam recusandae eligendi repellat porro nulla impedit vitae numquam dolores!</p>
-                </div>
-                <div class="tab-content" id="tab-content-2">
-                    <h1>Titulo 2</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab est autem eius sequi cum, quas assumenda necessitatibus explicabo reiciendis eveniet magnam recusandae eligendi repellat porro nulla impedit vitae numquam dolores!</p>
-                </div>
-                <div class="tab-content active" id="tab-content-3">
-                    <h1>Titulo 3</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab est autem eius sequi cum, quas assumenda necessitatibus explicabo reiciendis eveniet magnam recusandae eligendi repellat porro nulla impedit vitae numquam dolores!</p>
+                <div class="tab-content p-3" id="tab-3">
+                    <div class="row">
+                        <div class="col lg-6">
+                            <img class="image" src="../../images/third/cars/josh-rinard-2kAfdQX1r10-unsplash.jpg" alt="">
+                        </div>
+                        <div class="col lg-6 p-3">
+                            <h5>Texto</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, provident omnis? Dolore blanditiis 
+                                odit vitae odio temporibus cupiditate sunt autem maiores? Voluptate harum quis possimus obcaecati! Ex eveniet id dolorem?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,6 +126,7 @@
 
     <!-- INSERT SCRIPT -->
     <script src="../basic/Mandarina.js"></script>
+    <script src="Tab.js"></script>
 
 </body>
 </html>

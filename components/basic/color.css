@@ -21,8 +21,8 @@
 /* GRAY SCALE */
 .white, .white::before, .white::after{ background: var(--white) !important; }
 .light, .light::before, .light::after{ background: var(--light) !important; }
-.gray, .gray::before, .gray::after{ background: var(--gray) !important; }
-.dark, .dark::before, .dark::after{ background: var(--dark) !important;     color: var(--white) !important; }
+.gray,  .gray::before,  .gray::after{ background: var(--gray) !important; }
+.dark,  .dark::before,  .dark::after{ background: var(--dark) !important;   color: var(--white) !important; }
 .black, .black::before, .black::after{background: var(--black) !important;  color: var(--white) !important; }
 /* PRIMARY */
 .green,  .green::before,  .green::after{ background: var(--green) !important;       color: var(--white) !important; }

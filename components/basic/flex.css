@@ -28,6 +28,7 @@
 .col-2,.xs-2{ display: block; width: calc(100%*2/12); }
 .col-1,.xs-1{ display: block; width: calc(100%*1/12); }
 .col-0,.xs-0{ display: none; }
+.container{ width: 98%; }
 
 /* RESPONSIVE */
 /* sm = 500 -> + */
@@ -45,7 +46,7 @@
     .sm-2{ display: block; width: calc(100%*2/12); }
     .sm-1{ display: block; width: calc(100%*1/12); }
     .sm-0{ display: none; }
-    .container{ width: 100%; }
+    .container{ width: 95%; }
 }
 /* md = 900 -> + */
 @media (min-width : 900px) {

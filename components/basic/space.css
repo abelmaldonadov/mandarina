@@ -32,7 +32,7 @@
 }
 hr{
     height: 1px;
-    background: var(--gray);
+    background: var(--light);
     border: none;
 }
 /* PADDING */
