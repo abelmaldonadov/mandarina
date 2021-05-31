@@ -4,16 +4,16 @@
     display: block;
     width: 100%;
 }
-.list .item{
+.list>.item{
     padding: calc(var(--p)*2);
 }
-ul.list .item::marker, ol.list .item::marker{
+ul.list>.item::marker, ol.list>.item::marker{
     content: none;
 }
 ol.list{
     counter-reset: list;
 }
-ol.list .item::before{
+ol.list>.item::before{
     counter-increment: list;
     content: counter(list) ".";
     display: inline-block;

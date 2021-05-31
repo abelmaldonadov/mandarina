@@ -10,12 +10,12 @@
     color: var(--gray);
     font-weight: 500;
 }
-.dropdown .dropdown-open:after{
+.dropdown>.dropdown-open:after{
     content: " \025bc";
     font-size: .8rem;
     opacity: .5;
 }
-.dropdown .content{
+.dropdown>.content{
     border: var(--border);
     border-radius: var(--border-radius);
     position: absolute;
@@ -31,17 +31,17 @@
     transform: translateY(-10px);
     transition: opacity .25s, transform .25s;
 }
-.dropdown .content .item{
+.dropdown>.content>.item{
     min-width: 100px;
     display: block;
     padding: var(--p);
     background: var(--white);
     border-bottom: 1px solid var(--light);
 }
-.dropdown .content .item:hover{
+.dropdown>.content>.item:hover{
     background: var(--light);
 }
-.dropdown:hover .content, .dropdown:active .content{
+.dropdown:hover>.content, .dropdown:active>.content{
     visibility: visible;
     opacity: 1;
     transform: translateY(10px);

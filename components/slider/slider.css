@@ -5,7 +5,7 @@
     position: relative;
     overflow: hidden;
 }
-.slider .item{
+.slider>.item{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -14,51 +14,51 @@
     background-position: center;
 }
 
-[data-animation="auto"].slider .item{
+[data-animation="auto"].slider>.item{
     transition: all .1s;
     visibility: hidden;
 }
-[data-animation="auto"].slider .item.active{
+[data-animation="auto"].slider>.item.active{
     transition: all .1s;
     visibility: visible;
 }
 
-[data-animation="opacity"].slider .item{
+[data-animation="opacity"].slider>.item{
     transition: all 2s;
     opacity: 0;
 }
-[data-animation="opacity"].slider .item.active{
+[data-animation="opacity"].slider>.item.active{
     transition: all 2s;
     opacity: 1;
 }
 
-[data-animation="radiance"].slider .item{
+[data-animation="radiance"].slider>.item{
     transition: all .5s;
     opacity: 0;
 }
-[data-animation="radiance"].slider .item.active{
+[data-animation="radiance"].slider>.item.active{
     transition: all 2s;
     opacity: 1;
 }
 
-[data-animation="slide"].slider .item{
+[data-animation="slide"].slider>.item{
     z-index: -1;
     visibility: hidden;
     transform: translateX(100%);
 }
-[data-animation="slide"].slider .item.prev{
+[data-animation="slide"].slider>.item.prev{
     transition: all 2s;
     z-index: 1;
     visibility: visible;
     transform: translateX(0);
 }
-[data-animation="slide"].slider .item.active{
+[data-animation="slide"].slider>.item.active{
     transition: all 2s;
     z-index: 2;
     visibility: visible;
     transform: translateX(0);
 }
-[data-animation="slide"].slider .item.next{
+[data-animation="slide"].slider>.item.next{
     z-index: 3;
     visibility: visible;
     transform: translateX(100%);

@@ -8,7 +8,7 @@
     position: relative;
     overflow: hidden;
 }
-.card .card-header{
+.card>.card-header{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,10 +19,10 @@
     overflow: hidden;
     transition: all .5s;
 }
-.card .card-header *{
+.card>.card-header *{
     width: 100%;
 }
-.card .card-body{
+.card>.card-body{
     display: block;
     width: 100%;
     height: 50%;
@@ -31,17 +31,17 @@
     top: 50%;
     transition: all .5s;
 }
-.card .card-body *{
+.card>.card-body *{
     display: block;
     text-align: center;
     margin: auto;
 }
-.card .card-header:hover{
+.card>.card-header:hover{
     transition: all .5s;
     width: 200%;
     height: 100%;
 }
-.card .card-header:hover + .card-body{
+.card>.card-header:hover + .card-body{
     transition: all .5s;
     top: 100%;
 }

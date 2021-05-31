@@ -15,7 +15,7 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-.tool .item{
+.tool>.item{
     display: block;
     padding: calc(var(--p)*1.5);
     text-align: center;
@@ -23,7 +23,7 @@
     cursor: pointer;
     transition: all .25s;
 }
-.tool .item:hover{
+.tool>.item:hover{
     transform: scale(1.25);
     transition: all .25s;
 }

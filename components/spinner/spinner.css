@@ -10,7 +10,7 @@
     background: rgba(248, 248, 248, 0.5);
     z-index: 999;
 }
-.spinner .content{
+.spinner>.content{
     position: relative;
     width: 75px;
     height: 75px;
@@ -20,7 +20,7 @@
     border-left: 7.5px solid transparent;
     border-right: 7.5px solid transparent;
 }
-.spinner .mask1, .spinner .mask2{
+.spinner>.mask1, .spinner>.mask2{
     position: absolute;
     width: 75px;
     height: 75px;
@@ -33,18 +33,18 @@
 .spinner.active{
     display: flex;
 }
-.spinner.active .content{
+.spinner.active>.content{
     animation-name: spinner;
     animation-iteration-count: infinite;
     animation-duration: 1.5s;
 }
-.spinner.active .mask1{
+.spinner.active>.mask1{
     animation-name: mask1;
     animation-iteration-count: infinite;
     animation-duration: 1.5s;
     animation-delay: .15s;
 }
-.spinner.active .mask2{
+.spinner.active>.mask2{
     animation-name: mask2;
     animation-iteration-count: infinite;
     animation-duration: 1.5s;
