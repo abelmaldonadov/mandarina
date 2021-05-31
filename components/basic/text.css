@@ -31,6 +31,9 @@ a:hover, a *:hover{
     filter: invert(.80);
 }
 /* LINK */
+a.link{
+    display: block;
+}
 a.link::after{
     content: " \0226b";
     font-weight: bolder;

@@ -31,14 +31,158 @@
     <link rel="stylesheet" href="../components/pagination/pagination.css">
     <link rel="stylesheet" href="../components/slider/slider.css">
     <link rel="stylesheet" href="../components/spinner/spinner.css">
+    <link rel="stylesheet" href="../components/tab/tab.css">
     <link rel="stylesheet" href="../components/table/table.css">
     <link rel="stylesheet" href="../components/title/title.css">
+    <link rel="stylesheet" href="../components/tool/tool.css">
     <link rel="stylesheet" href="../components/footer/footer.css">
     <link rel="stylesheet" href="../components/article/article.css">
 </head>
 <body>
     
-    <!--  -->
+    <!-- DRAWER -->
+    <button class="drawer-open" data-target="#drawer1"></button>
+    <div class="drawer" id="drawer1">
+        <div class="brand">
+            <h3><a href="/">Mandarina</a></h3>
+        </div>
+        <a class="item" href="#">Dashboard</a>
+        <a class="item" href="#">Configuración</a>
+        <a class="item" href="#">Usuarios</a>
+        <a class="item" href="#">Avanzados</a>
+        <a class="item" href="#">Otros</a>
+        <a class="item" href="#">terminos y condiciones</a>
+        <a class="item" href="#">algún enlace raro</a>
+        <a class="item text-red" href="#">Salir</a>
+    </div>
+
+    <!-- TOOL -->
+    <div class="tool right">
+        <a class="item text-15" href="#">🕵</a>
+        <a class="item text-15" href="#">📸</a>
+        <a class="item text-15" href="#">📞</a>
+        <a class="item text-15" href="#">👽</a>
+        <a class="item text-15" href="#">📬</a>
+        <a class="item text-15" href="#">🐦</a>
+        <p class="item">733 <br> Shares</p>
+    </div>
+
+    <main class="container my-6 pb-6">
+
+        <h3 class="text-gray mb-3 ml-1">Dashboard</h3>
+
+        <div class="row">
+            <div class="col">
+                <!-- TAB -->
+                <div class="tab shadow" id="tab">
+                    <div class="tab-header">
+                        <div class="tab-open active" data-target="#tab-1">Tab 1</div>
+                        <div class="tab-open" data-target="#tab-2">Tab 2</div>
+                        <div class="tab-open" data-target="#tab-3">Tab 3</div>
+                    </div>
+                    <div class="tab-body">
+                        <div class="tab-content active" id="tab-1">
+                            <div class="control">
+                                <div class="control-header">
+                                    <h5>Control 1</h5>
+                                </div>
+                                <div class="control-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, recusandae unde necessitatibus rem labore earum ratione quod modi doloremque. 
+                                    Id ut exercitationem doloribus maxime expedita explicabo necessitatibus cum minima sit?
+                                </div>
+                                <div class="control-footer">
+                                    <button class="btn l-red">Cancelar</button>
+                                    <button class="btn l-green">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="tab-2">
+                            <div class="control">
+                                <div class="control-header">
+                                    <h5>Control 2</h5>
+                                </div>
+                                <div class="control-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, recusandae unde necessitatibus rem labore earum ratione quod modi doloremque. 
+                                    Id ut exercitationem doloribus maxime expedita explicabo necessitatibus cum minima sit?
+                                </div>
+                                <div class="control-footer">
+                                    <button class="btn l-red">Cancelar</button>
+                                    <button class="btn l-green">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="tab-3">
+                            <div class="control">
+                                <div class="control-header">
+                                    <h5>Control 3</h5>
+                                </div>
+                                <div class="control-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, recusandae unde necessitatibus rem labore earum ratione quod modi doloremque. 
+                                    Id ut exercitationem doloribus maxime expedita explicabo necessitatibus cum minima sit?
+                                </div>
+                                <div class="control-footer">
+                                    <button class="btn l-red">Cancelar</button>
+                                    <button class="btn l-green">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col lg-6">
+                <div class="control shadow">
+                    <div class="control-header">
+                        <h5>Control</h5>
+                    </div>
+                    <div class="control-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, recusandae unde necessitatibus rem labore earum ratione quod modi doloremque. 
+                        Id ut exercitationem doloribus maxime expedita explicabo necessitatibus cum minima sit?
+                    </div>
+                    <div class="control-footer">
+                        <button class="btn l-red">Cancelar</button>
+                        <button class="btn l-green">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col lg-6">
+                <div class="control shadow">
+                    <div class="control-header">
+                        <h5>Control</h5>
+                    </div>
+                    <div class="control-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, recusandae unde necessitatibus rem labore earum ratione quod modi doloremque. 
+                        Id ut exercitationem doloribus maxime expedita explicabo necessitatibus cum minima sit?
+                    </div>
+                    <div class="control-footer">
+                        <button class="btn l-red">Cancelar</button>
+                        <button class="btn l-green">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="control shadow">
+                    <div class="control-header">
+                        <h5>Control</h5>
+                    </div>
+                    <div class="control-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, recusandae unde necessitatibus rem labore earum ratione quod modi doloremque. 
+                        Id ut exercitationem doloribus maxime expedita explicabo necessitatibus cum minima sit?
+                    </div>
+                    <div class="control-footer">
+                        <button class="btn l-red">Cancelar</button>
+                        <button class="btn l-green">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
     
 
     <!-- INSERT SCRIPT -->
@@ -48,7 +192,6 @@
     <script src="../components/drawer/Drawer.js"></script>
     <script src="../components/modal/Modal.js"></script>
     <script src="../components/slider/Slider.js"></script>
-    <script src="../components/card/Card.js"></script>
     <script src="../components/tab/Tab.js"></script>
     <script src="../components/spinner/Spinner.js"></script>
     

@@ -6,8 +6,9 @@
     border-bottom-right-radius: var(--border-radius);
     box-shadow: var(--shadow);
     z-index: 999999;
+    background: var(--white);
 }
-.tool.rigth{
+.tool.right{
     right: 0;
     border-top-left-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);

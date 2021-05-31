@@ -31,8 +31,10 @@
     <link rel="stylesheet" href="components/pagination/pagination.css">
     <link rel="stylesheet" href="components/slider/slider.css">
     <link rel="stylesheet" href="components/spinner/spinner.css">
+    <link rel="stylesheet" href="components/tab/tab.css">
     <link rel="stylesheet" href="components/table/table.css">
     <link rel="stylesheet" href="components/title/title.css">
+    <link rel="stylesheet" href="components/tool/tool.css">
     <link rel="stylesheet" href="components/footer/footer.css">
     <link rel="stylesheet" href="components/article/article.css">
 </head>
@@ -49,21 +51,23 @@
         <a class="item" href="#alert">Alert</a>
         <a class="item" href="#article">Article</a>
         <a class="item" href="#breadcrumb">Breadcrumb</a>
+        <a class="item" href="#caption">Caption</a>
         <a class="item" href="#card">Card</a>
         <a class="item" href="#control">Control</a>
         <a class="item" href="#drawer">Drawer</a>
         <a class="item" href="#dropdown">Dropdown</a>
         <a class="item" href="#footer">Footer</a>
         <a class="item" href="#form">Form</a>
-        <a class="item" href="#img">Img</a>
         <a class="item" href="#list">List</a>
         <a class="item" href="#modal">Modal</a>
         <a class="item" href="#navbar">Navbar</a>
         <a class="item" href="#pagination">Pagination</a>
         <a class="item" href="#slider">Slider</a>
         <a class="item" href="#spinner">Spinner</a>
+        <a class="item" href="#tab">Tab</a>
         <a class="item" href="#table">Table</a>
         <a class="item" href="#title">Title</a>
+        <a class="item" href="#tool">Tool</a>
     </div>
 
 
@@ -79,9 +83,8 @@
         </article>
 
         <!-- INSTALACIÓN -->
-        <div class="my-5">
-            <a href="#start" id="start" class="link text-15 text-orange">Comenzar</a>
-        </div>
+        <a href="#start" id="start" class="link text-15 text-orange my-5 ml-1">Comenzar</a>
+
         <div class="row my-3">
             <div class="col lg-12">
                 <div class="code radius shadow">
@@ -90,6 +93,7 @@
                         <!-- <pre class="text-blue"><code>&lt;tag&gt;&lt;/tag&gt;</code></pre> -->
 
                         <pre class="text-yellow"><code>&lt;!-- MANDARINA CSS STYLES --&gt;</code></pre>
+                        <pre class="text-blue"><code>&lt;link rel='stylesheet' href='https://config.css'&gt;</code></pre>
                         <pre class="text-blue"><code>&lt;link rel='stylesheet' href='https://mandarina.css'&gt;</code></pre>
                         <br>
                         <pre class="text-yellow"><code>&lt;!-- MANDARINA SCRIPTS --&gt;</code></pre>
@@ -100,9 +104,8 @@
         </div>
 
         <!-- DEMOS -->
-        <div class="my-5">
-            <a href="#demos" id="demos" class="link text-15 text-orange">Demos</a>
-        </div>
+        <a href="#demos" id="demos" class="link text-15 text-orange my-5 ml-1">Demos</a>
+
         <div class="row my-3">
             <!-- IMG -->
             <div class="col lg-4">
@@ -124,7 +127,7 @@
             <div class="col lg-4">
                 <div class="image" data-bg="images/screenshots/informative.png" data-height="200px">
                     <div class="caption">
-                        <a class="text-20 center" href="demos/landing.html">Informative</a>
+                        <a class="text-20 center" href="demos/informative.html">Informative</a>
                     </div>
                 </div>
             </div>
@@ -132,7 +135,7 @@
             <div class="col lg-4">
                 <div class="image" data-bg="images/screenshots/login.png" data-height="200px">
                     <div class="caption">
-                        <a class="text-20 center" href="demos/landing.html">Blog</a>
+                        <a class="text-20 center" href="demos/blog.html">Blog</a>
                     </div>
                 </div>
             </div>
@@ -140,7 +143,7 @@
             <div class="col lg-4">
                 <div class="image" data-bg="images/screenshots/login.png" data-height="200px">
                     <div class="caption">
-                        <a class="text-20 center" href="demos/landing.html">Commerce</a>
+                        <a class="text-20 center" href="demos/commerce.html">Commerce</a>
                     </div>
                 </div>
             </div>
@@ -148,7 +151,7 @@
             <div class="col lg-4">
                 <div class="image" data-bg="images/screenshots/login.png" data-height="200px">
                     <div class="caption">
-                        <a class="text-20 center" href="demos/landing.html">Dashboard</a>
+                        <a class="text-20 center" href="demos/dashboard.html">Dashboard</a>
                     </div>
                 </div>
             </div>
@@ -161,9 +164,8 @@
 
 
         <!-- ALERT -->
-        <div class="my-5">
-            <a href="#alert" id="alert" class="link text-15 text-orange">Alert</a>
-        </div>
+        <a href="#alert" id="alert" class="link text-15 text-orange my-5 ml-1">Alert</a>
+        
         <div class="row my-3">
             <div class="col lg-6">
                 <div class="alert l-orange">
@@ -251,9 +253,8 @@
         </div>
 
         <!-- ARTICLE -->
-        <div class="my-5">
-            <a href="#article" id="article" class="link text-15 text-orange">Article</a>
-        </div>
+        <a href="#article" id="article" class="link text-15 text-orange my-5 ml-1">Article</a>
+        
         <div class="row my-3">
             <div class="col lg-12">
                 <p class="article text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae optio hic delectus nulla saepe voluptatibus, quidem 
@@ -272,70 +273,58 @@
         </div>
 
         <!-- BREADCRUMB -->
-        <div class="my-5"></div>
-        <a href="#breadcrumb" id="breadcrumb" class="link text-15 text-orange">Breadcrumb</a>
+        <a href="#breadcrumb" id="breadcrumb" class="link text-15 text-orange my-5 ml-1">Breadcrumb</a>
+
+        <!-- CAPTION -->
+        <a href="#caption" id="caption" class="link text-15 text-orange my-5 ml-1">Caption</a>
 
         <!-- CARD -->
-        <div class="my-5"></div>
-        <a href="#card" id="card" class="link text-15 text-orange">Card</a>
+        <a href="#card" id="card" class="link text-15 text-orange my-5 ml-1">Card</a>
 
         <!-- CONTROL -->
-        <div class="my-5"></div>
-        <a href="#control" id="control" class="link text-15 text-orange">Control</a>
+        <a href="#control" id="control" class="link text-15 text-orange my-5 ml-1">Control</a>
 
         <!-- DRAWER -->
-        <div class="my-5"></div>
-        <a href="#drawer" id="drawer" class="link text-15 text-orange">Drawer</a>
+        <a href="#drawer" id="drawer" class="link text-15 text-orange my-5 ml-1">Drawer</a>
 
         <!-- DROPDOWN -->
-        <div class="my-5"></div>
-        <a href="#dropdown" id="dropdown" class="link text-15 text-orange">Dropdown</a>
+        <a href="#dropdown" id="dropdown" class="link text-15 text-orange my-5 ml-1">Dropdown</a>
 
         <!-- FOOTER -->
-        <div class="my-5"></div>
-        <a href="#footer" id="footer" class="link text-15 text-orange">Footer</a>
+        <a href="#footer" id="footer" class="link text-15 text-orange my-5 ml-1">Footer</a>
 
         <!-- FORM -->
-        <div class="my-5"></div>
-        <a href="#form" id="form" class="link text-15 text-orange">Form</a>
-
-        <!-- IMG -->
-        <div class="my-5"></div>
-        <a href="#img" id="img" class="link text-15 text-orange">Img</a>
+        <a href="#form" id="form" class="link text-15 text-orange my-5 ml-1">Form</a>
 
         <!-- LIST -->
-        <div class="my-5"></div>
-        <a href="#list" id="list" class="link text-15 text-orange">List</a>
+        <a href="#list" id="list" class="link text-15 text-orange my-5 ml-1">List</a>
 
         <!-- MODAL -->
-        <div class="my-5"></div>
-        <a href="#modal" id="modal" class="link text-15 text-orange">Modal</a>
+        <a href="#modal" id="modal" class="link text-15 text-orange my-5 ml-1">Modal</a>
 
         <!-- NAVBAR -->
-        <div class="my-5"></div>
-        <a href="#navbar" id="navbar" class="link text-15 text-orange">Navbar</a>
+        <a href="#navbar" id="navbar" class="link text-15 text-orange my-5 ml-1">Navbar</a>
 
         <!-- PAGINATION -->
-        <div class="my-5"></div>
-        <a href="#pagination" id="pagination" class="link text-15 text-orange">Pagination</a>
+        <a href="#pagination" id="pagination" class="link text-15 text-orange my-5 ml-1">Pagination</a>
         
         <!-- SLIDER -->
-        <div class="my-5"></div>
-        <a href="#slider" id="slider" class="link text-15 text-orange">Slider</a>
+        <a href="#slider" id="slider" class="link text-15 text-orange my-5 ml-1">Slider</a>
 
         <!-- SPINNER -->
-        <div class="my-5"></div>
-        <a href="#spinner" id="spinner" class="link text-15 text-orange">Spinner</a>
+        <a href="#spinner" id="spinner" class="link text-15 text-orange my-5 ml-1">Spinner</a>
         
+        <!-- TAB -->
+        <a href="#tab" id="tab" class="link text-15 text-orange my-5 ml-1">Tab</a>
+
         <!-- TABLE -->
-        <div class="my-5">
-            <a href="#table" id="table" class="link text-15 text-orange">Table</a>
-        </div>
+        <a href="#table" id="table" class="link text-15 text-orange my-5 ml-1">Table</a>
 
         <!-- TITLE -->
-        <div class="my-5">
-            <a href="#title" id="title" class="link text-15 text-orange">Title</a>
-        </div>
+        <a href="#title" id="title" class="link text-15 text-orange my-5 ml-1">Title</a>
+
+        <!-- TOOL -->
+        <a href="#tool" id="tool" class="link text-15 text-orange my-5 ml-1">Tool</a>
 
 
 
@@ -344,9 +333,7 @@
 
 
         <!-- AGRADECIMIENTOS -->
-        <div class="my-5">
-            <a href="thanks/" class="link text-15 text-orange">Agradecimientos</a>
-        </div>
+        <a href="thanks/" class="link text-15 text-orange my-5 ml-1">Agradecimientos</a>
 
     </main>
 
@@ -385,7 +372,6 @@
     <script src="components/drawer/Drawer.js"></script>
     <script src="components/modal/Modal.js"></script>
     <script src="components/slider/Slider.js"></script>
-    <script src="components/card/Card.js"></script>
     <script src="components/tab/Tab.js"></script>
     <script src="components/spinner/Spinner.js"></script>
 
