@@ -1,0 +1,9 @@
+.image{
+    display: block;
+    width: 100%;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
