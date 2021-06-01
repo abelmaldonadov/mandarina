@@ -1,6 +1,6 @@
 .footer{
-    padding-top: calc(var(--p)*4);
-    padding-bottom: calc(var(--p)*4);
+    padding-top: calc(var(--p)*7);
+    padding-bottom: calc(var(--p)*9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,5 +8,5 @@
     text-align: center;
 }
 .footer .item{
-    margin-top: calc(var(--m)*2);
+    margin-top: calc(var(--m)*4);
 }

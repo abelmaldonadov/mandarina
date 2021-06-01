@@ -1,11 +1,4 @@
-/*
- * TITULO: General
- * ULTIMO UPD: 2021-05-30
- * AUTORES: Maldonado
- * DESCRIPCION: Contiene clases basicas de decoracion y posición
- */
-
- *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,9 +6,9 @@
     user-select: none;
 }
 html,body{
-    font-size: var(--font-size);
-    max-width: var(--max-width);
-    max-height: var(--max-height);
+    font-size: 15px;
+    max-width: 100vw;
+    max-height: 100%;
     font-family: var(--font-family);
 }
 /* POSITION */
@@ -24,7 +17,7 @@ html,body{
 .fixed{ position: fixed; }
 /* CURSOR */
 .pointer *:hover{ cursor: pointer; }
-/* BACKGROUND */
+/* BG */
 .bg-center{ background-position: center; }
 .bg-cover{ background-size: cover; }
 .bg-contain{ background-size: contain;}
@@ -50,13 +43,13 @@ html,body{
     border: var(--border) !important;
     border-radius: var(--border-radius) !important;
 }
-.no-radius{
-    border: none !important;
-    border-radius: 0 !important;
-}
 .circle{
     border: var(--border) !important;
     border-radius: 50% !important;
+}
+.no-radius{
+    border: none !important;
+    border-radius: 0 !important;
 }
 /* SIZE */
 .w-100{ width: 100% !important; }
@@ -80,18 +73,6 @@ html,body{
     color: var(--text-notify);
     border-radius: var(--border-radius);
 }
-
-
-
-
-
-/*
- * TITULO: Space
- * ULTIMO UPD: 2021-05-30
- * AUTORES: Maldonado
- * DESCRIPCION: Contiene clases de espaciado
- */
-
 .center{
     margin: auto;
     text-align: center;
@@ -271,19 +252,7 @@ hr{
 .ml-7{ margin-left: calc(var(--m)*7) !important; }
 .ml-8{ margin-left: calc(var(--m)*8) !important; }
 .ml-9{ margin-left: calc(var(--m)*9) !important; }
-
-
-
-
-
-
- /*
- * TITULO: Color
- * ULTIMO UPD: 2021-05-30
- * AUTORES: Maldonado
- * DESCRIPCION: Contiene clases de color en texto y en contenedores 
- */
-
+/* TEXT */
 /* GRAY SCALE */
 .text-white,.dark>*,.black>*,.red>*,.blue>*,.purple>*,.pink>*,.brown>*{ color: var(--white) !important; }
 .text-light{ color: var(--light) !important; }
@@ -330,24 +299,12 @@ hr{
 .l-sky,    .l-sky::before,    .l-sky::after{ background: var(--l-sky) !important;       color: var(--dark) !important; }
 .l-pink,   .l-pink::before,   .l-pink::after{ background: var(--l-pink) !important;     color: var(--dark) !important; }
 .l-brown,  .l-brown::before,  .l-brown::after{ background: var(--l-brown) !important;   color: var(--dark) !important; }
+
 /* ICONO */
 body.dark p{
     color: var(--white);
 }
-
-
-
-
-
-
- /*
- * TITULO: Text
- * ULTIMO UPD: 2021-05-30
- * AUTORES: Maldonado
- * DESCRIPCION: Contiene clases para tamaño de texto, a links y code 
- */
-
- *{
+*{
     font-weight: 300;
 }
 h1,h2,h3,h4,h5,h6{
@@ -380,6 +337,9 @@ a:hover, a *:hover{
     filter: invert(.80);
 }
 /* LINK */
+a.link{
+    display: block;
+}
 a.link::after{
     content: " \0226b";
     font-weight: bolder;
@@ -439,20 +399,7 @@ i,.i{ font-style: italic; }
     cursor: text;
     user-select: text !important;
 }
-
-
-
-
-
-
- /*
- * TITULO: Image
- * ULTIMO UPD: 2021-05-30
- * AUTORES: Maldonado
- * DESCRIPCION: Contiene clases para personalizar imagenes
- */
-
- .image{
+.image{
     display: block;
     width: 100%;
     border: var(--border);
@@ -461,19 +408,6 @@ i,.i{ font-style: italic; }
     background-size: cover;
     overflow: hidden;
 }
-
-
-
-
-
-
- /*
- * TITULO: Flex
- * ULTIMO UPD: 2021-05-30
- * AUTORES: Maldonado
- * DESCRIPCION: Contiene clases de flexbox para simular una grid responsive
- */
-
 .container{
     margin: auto;
 }
@@ -575,20 +509,7 @@ i,.i{ font-style: italic; }
     .xl-0{ display: none; }
     .container{ width: var(--container); }
 }
-
-
-
-
-
-
- /*
- * TITULO: Grid
- * ULTIMO UPD: 2021-05-30
- * AUTORES: Maldonado
- * DESCRIPCION: Contiene clases para construir una grid con css grid
- */
-
- .g-row{
+.g-row{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--p);
@@ -677,20 +598,7 @@ i,.i{ font-style: italic; }
     .g-row>.xl-1{ grid-column: span 1; }
     .g-row>.xl-0{ display: none; }
 }
-
-
-
-
-
-
- /*
- * TITULO: Btn
- * ULTIMO UPD: 2021-05-30
- * AUTORES: Maldonado
- * DESCRIPCION: Contiene clases para personalizar botones
- */
-
- .btn,.btn-md{
+.btn,.btn-md{
     border: var(--border);
     border-radius: var(--border-radius);
     font-size: 1rem;

@@ -1,0 +1,203 @@
+class Mandarina
+{
+    constructor() {
+        // HEIGHT
+        this.getAll("[data-height]").forEach(item => {
+            item.style.height += item.dataset.height
+        })
+        // WIDTH
+        this.getAll("[data-width]").forEach(item => {
+            item.style.width += item.dataset.width
+        })
+        // BACKGROUND
+        this.getAll("[data-bg]").forEach(item => {
+            item.style.backgroundImage += "url("+item.dataset.bg+")"
+        })
+        // NOTIFY
+        this.getAll("[data-notify]").forEach(item => {
+            item.classList.add("notify")
+        })
+        
+    }
+    getAll(att) {
+        return document.querySelectorAll(att)
+    }
+}
+new Mandarina()
+class Alert
+{
+    constructor(alert){
+        alert.addEventListener("click",() => {
+            alert.classList.add("alert-close")
+            setTimeout(() => {
+                alert.hidden = true
+            }, 500);
+        })
+    }
+}
+document.querySelectorAll(".alert").forEach(alert => {
+    new Alert(alert)
+})
+class Drawer
+{
+    constructor(drawer) {
+        this.drawer = "#"+drawer.id //#DRAWER1
+        // TOGGLE MODAL
+        document.querySelectorAll(".drawer-open").forEach(btn => {
+            if (btn.dataset.target == this.drawer) {
+                btn.addEventListener("click", () => {
+                    drawer.classList.toggle("active")
+                    btn.classList.toggle("active")
+                })
+            }
+        })
+    }
+}
+document.querySelectorAll(".drawer").forEach(drawer => {
+    new Drawer(drawer)
+})
+class Modal
+{
+    constructor(modal){
+        this.modal = "#"+modal.id // #MODAL1
+        // ABRIR MODAL
+        document.querySelectorAll(".modal-open").forEach(btn => {
+            if (btn.dataset.target == this.modal) {
+                btn.addEventListener("click", () => {
+                    document.querySelector(this.modal).classList.add("active")
+                })
+            }
+        })
+        // CERRAR MODAL
+        document.querySelectorAll(this.modal+" .modal-close").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelector(this.modal).classList.remove("active")
+            })
+        })
+    }
+}
+document.querySelectorAll(".modal").forEach(modal => {
+    new Modal(modal)
+})
+class Navbar
+{
+    constructor(menu) {
+        this.menu = "#" + menu.id // #MENU1
+        // TOGGLE MENU
+        document.querySelectorAll(".menu-open").forEach(btn => {
+            if (btn.dataset.target == this.menu) {
+                btn.addEventListener("click", () => {
+                    menu.classList.toggle("active")
+                    btn.classList.toggle("active")
+                })
+            }
+        })
+    }
+}
+document.querySelectorAll(".navbar .menu").forEach(menu => {
+    new Navbar(menu)
+})
+class Slider
+{
+    constructor(slider) {
+        this.slider = "#"+slider.id
+        this.animation = slider.dataset.animation // AUTO; OPACITY; SLIDE; RADIANCE
+        this.duration = slider.dataset.duration * 1000
+        this.minHeight = slider.dataset.minHeight
+        this.numFrames = slider.children.length
+
+        // PRESETS
+        if (screen.width < 900) {
+            slider.style.height = this.minHeight
+        }
+        slider.children[this.numFrames-1].classList.add("prev")
+        slider.children[0].classList.add("active")
+        slider.children[1].classList.add("next")
+
+        this.autoPlay()
+    }
+
+    async autoPlay() {
+        this.next(0)
+        let i = 1 // EL INDICE DEL FRAME ACTUAL
+        await new Promise(resolve => {
+            setInterval(() => {
+                this.next(i)
+                if (i == this.numFrames - 1) { i = 0 }
+                else { i++ }
+            }, this.duration);
+        })
+    }
+
+    next(i) {
+        let h // FRAME ANTERIOR
+        if (i == 0) { h = this.numFrames -1 }
+        else { h = i-1 }
+        let j // FRAME SIGUIENTE
+        if (i == this.numFrames - 1) { j = 0 }
+        else { j = i+1 }
+        // ACTIVAR EL FRAME ANTERIOR
+        document.querySelector(this.slider + " .item.prev").classList.remove("prev")
+        document.querySelector(this.slider).children[h].classList.add("prev")
+        // ACTIVAR FRAME ACTUAL
+        document.querySelector(this.slider + " .item.active").classList.remove("active")
+        document.querySelector(this.slider).children[i].classList.add("active")
+        // ACTIVAR FRAME SIGUIENTE
+        document.querySelector(this.slider + " .item.next").classList.remove("next")
+        document.querySelector(this.slider).children[j].classList.add("next")
+    }
+}
+document.querySelectorAll(".slider").forEach(slider => {
+    new Slider(slider)
+})
+class Spinner
+{
+    constructor() {
+        let spinner = document.createElement("div")
+        let content = document.createElement("div")
+        let mask1 = document.createElement("div")
+        let mask2 = document.createElement("div")
+        
+        spinner.setAttribute("class","spinner")
+        content.setAttribute("class","content")
+        mask1.setAttribute("class","mask1")
+        mask2.setAttribute("class","mask2")
+
+        spinner.appendChild(content)
+        spinner.appendChild(mask1)
+        spinner.appendChild(mask2)
+
+        document.querySelector("body").appendChild(spinner)
+    }
+
+    static show() {
+        document.querySelector(".spinner").classList.add("active")
+    }
+
+    static hide() {
+        document.querySelector(".spinner").classList.remove("active")
+    }
+}
+new Spinner()
+class Tab
+{
+    constructor(tab) {
+        this.tab = "#"+tab.id
+        
+        document.querySelectorAll(this.tab+">.tab-header>.tab-open").forEach(tabOpen => {
+            tabOpen.addEventListener("click", () => {
+                // DESACTIVAR TODOS LOS TAB
+                document.querySelectorAll(this.tab+">.tab-header>.tab-open, "+this.tab+">.tab-body>.tab-content").forEach(elem => {
+                    elem.classList.remove("active")
+                })
+
+                // ACTIVAR TAB
+                tabOpen.classList.add("active")
+                document.querySelector(this.tab+">.tab-body>.tab-content"+tabOpen.dataset.target).classList.add("active")
+            })
+        })
+    }
+}
+document.querySelectorAll(".tab").forEach(tab => {
+    new Tab(tab)
+})
