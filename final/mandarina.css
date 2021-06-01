@@ -1,3 +1,11 @@
+/*
+ *
+ * COMPONENT : @general
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +19,14 @@ html,body{
     max-height: 100%;
     font-family: var(--font-family);
 }
+/*
+ *
+ * COMPONENT : @decoration
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 /* POSITION */
 .relative{ position: relative; }
 .absolute{ position: absolute; }
@@ -22,7 +38,7 @@ html,body{
 .bg-cover{ background-size: cover; }
 .bg-contain{ background-size: contain;}
 .bg-no-repeat{ background-repeat: no-repeat; }
-/* DECORATION */
+/* OPACITY */
 .opacity-1{ opacity: .1 !important; }
 .opacity-2{ opacity: .2 !important; }
 .opacity-3{ opacity: .3 !important; }
@@ -35,6 +51,7 @@ html,body{
 .opacity-10{ opacity: 10 !important; }
 .overflow-h{ overflow: hidden !important; }
 .overflow-a{ overflow: auto !important; }
+/* BORDER */
 .shadow{ box-shadow: var(--shadow) !important; }
 .no-shadow{ box-shadow: none !important; }
 .border{ border: var(--border) !important; }
@@ -73,6 +90,14 @@ html,body{
     color: var(--text-notify);
     border-radius: var(--border-radius);
 }
+/*
+ *
+ * COMPONENT : @space
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 .center{
     margin: auto;
     text-align: center;
@@ -252,6 +277,14 @@ hr{
 .ml-7{ margin-left: calc(var(--m)*7) !important; }
 .ml-8{ margin-left: calc(var(--m)*8) !important; }
 .ml-9{ margin-left: calc(var(--m)*9) !important; }
+/*
+ *
+ * COMPONENT : @color
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 /* TEXT */
 /* GRAY SCALE */
 .text-white,.dark>*,.black>*,.red>*,.blue>*,.purple>*,.pink>*,.brown>*{ color: var(--white) !important; }
@@ -299,11 +332,18 @@ hr{
 .l-sky,    .l-sky::before,    .l-sky::after{ background: var(--l-sky) !important;       color: var(--dark) !important; }
 .l-pink,   .l-pink::before,   .l-pink::after{ background: var(--l-pink) !important;     color: var(--dark) !important; }
 .l-brown,  .l-brown::before,  .l-brown::after{ background: var(--l-brown) !important;   color: var(--dark) !important; }
-
 /* ICONO */
 body.dark p{
     color: var(--white);
 }
+/*
+ *
+ * COMPONENT : @text
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 *{
     font-weight: 300;
 }
@@ -399,6 +439,14 @@ i,.i{ font-style: italic; }
     cursor: text;
     user-select: text !important;
 }
+/*
+ *
+ * COMPONENT : @image
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 .image{
     display: block;
     width: 100%;
@@ -408,6 +456,14 @@ i,.i{ font-style: italic; }
     background-size: cover;
     overflow: hidden;
 }
+/*
+ *
+ * COMPONENT : @flex
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 .container{
     margin: auto;
 }
@@ -509,6 +565,14 @@ i,.i{ font-style: italic; }
     .xl-0{ display: none; }
     .container{ width: var(--container); }
 }
+/*
+ *
+ * COMPONENT : @grid
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 .g-row{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -598,6 +662,14 @@ i,.i{ font-style: italic; }
     .g-row>.xl-1{ grid-column: span 1; }
     .g-row>.xl-0{ display: none; }
 }
+/*
+ *
+ * COMPONENT : @btn
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 .btn,.btn-md{
     border: var(--border);
     border-radius: var(--border-radius);
@@ -631,3 +703,182 @@ i,.i{ font-style: italic; }
 .btn-block{
     width: 100%;
 }
+/*
+ *
+ * COMPONENT : @alert
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @article
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @breadcrumb
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @caption
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @card
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @control
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @drawer
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @dropdown
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @footer
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @form
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @list
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @modal
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @navbar
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @pagination
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @slider
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @spinner
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @tab
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @table
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @title
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
+
+/*
+ *
+ * COMPONENT : @tool
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/

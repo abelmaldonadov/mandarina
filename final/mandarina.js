@@ -1,3 +1,11 @@
+/*
+ *
+ * COMPONENT : @Mandarina
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 class Mandarina
 {
     constructor() {
@@ -24,6 +32,14 @@ class Mandarina
     }
 }
 new Mandarina()
+/*
+ *
+ * COMPONENT : @Alert
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 class Alert
 {
     constructor(alert){
@@ -38,6 +54,14 @@ class Alert
 document.querySelectorAll(".alert").forEach(alert => {
     new Alert(alert)
 })
+/*
+ *
+ * COMPONENT : @Drawer
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 class Drawer
 {
     constructor(drawer) {
@@ -56,6 +80,14 @@ class Drawer
 document.querySelectorAll(".drawer").forEach(drawer => {
     new Drawer(drawer)
 })
+/*
+ *
+ * COMPONENT : @Modal
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 class Modal
 {
     constructor(modal){
@@ -79,6 +111,14 @@ class Modal
 document.querySelectorAll(".modal").forEach(modal => {
     new Modal(modal)
 })
+/*
+ *
+ * COMPONENT : @Navbar
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 class Navbar
 {
     constructor(menu) {
@@ -97,6 +137,14 @@ class Navbar
 document.querySelectorAll(".navbar .menu").forEach(menu => {
     new Navbar(menu)
 })
+/*
+ *
+ * COMPONENT : @Slider
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 class Slider
 {
     constructor(slider) {
@@ -150,6 +198,14 @@ class Slider
 document.querySelectorAll(".slider").forEach(slider => {
     new Slider(slider)
 })
+/*
+ *
+ * COMPONENT : @Spinner
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 class Spinner
 {
     constructor() {
@@ -179,6 +235,14 @@ class Spinner
     }
 }
 new Spinner()
+/*
+ *
+ * COMPONENT : @Tab
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
 class Tab
 {
     constructor(tab) {
@@ -201,3 +265,12 @@ class Tab
 document.querySelectorAll(".tab").forEach(tab => {
     new Tab(tab)
 })
+
+/*
+ *
+ * COMPONENT : @
+ * AUTOR : Mandarina
+ * FECHA : 2021/06/01
+ * NOTA  : ""
+ *
+*/
